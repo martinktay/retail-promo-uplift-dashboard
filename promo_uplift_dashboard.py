@@ -194,7 +194,7 @@ def create_uplift_model(df):
 def main():
     # Header
     st.markdown('<h1 class="main-header">Retail Promo Uplift Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown("### Advanced Causal Analysis for Marketing Campaign Optimization")
+    st.markdown("### Advanced Causal Analysis for Marketing Campaign Optimisation")
     
     # Load data
     with st.spinner("Loading and processing data..."):
@@ -227,11 +227,13 @@ def main():
     st.sidebar.header("Dashboard Filters")
     
     # Income range filter
+    income_min = max(0, int(df['income'].min()))  # Ensure minimum is not negative
+    income_max = int(df['income'].max())
     income_range = st.sidebar.slider(
         "Income Range (£)",
-        min_value=int(df['income'].min()),
-        max_value=int(df['income'].max()),
-        value=(int(df['income'].min()), int(df['income'].max()))
+        min_value=income_min,
+        max_value=income_max,
+        value=(income_min, income_max)
     )
     
     # Customer segment filter
@@ -380,7 +382,7 @@ def main():
         <h4>Best Performing Segment</h4>
         <p><strong>{best_uplift_segment['customer_segment']}</strong> shows the highest uplift at 
         <strong>{best_uplift_segment['uplift_percentage']}%</strong> when exposed to promotions.</p>
-        <p><em>Recommendation: Prioritize this segment for targeted campaigns.</em></p>
+        <p><em>Recommendation: Prioritise this segment for targeted campaigns.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -391,7 +393,7 @@ def main():
         <p><strong>{worst_uplift_segment['customer_segment']}</strong> shows only 
         <strong>{worst_uplift_segment['uplift_percentage']}%</strong> uplift, suggesting 
         different promotional strategies may be needed.</p>
-        <p><em>Action: Review current approach and test alternative tactics.</em></p>
+        <p><em>Action: Review current approach and test alternative strategies.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -548,7 +550,7 @@ def main():
         <div class="metric-card">
         <h4>High-Impact Segments</h4>
         <ul>
-        <li>Prioritize Lapsed Customers (152% uplift) with re-engagement campaigns</li>
+        <li>Prioritise Lapsed Customers (152% uplift) with re-engagement campaigns</li>
         <li>Target New Customers (125% uplift) with welcome promotions</li>
         <li>Develop premium strategies for High-Value Existing customers</li>
         </ul>
@@ -572,8 +574,8 @@ def main():
     st.markdown(
         """
         <div style='text-align: center; color: #666;'>
-        <p>Retail Promo Uplift Dashboard | Built with Streamlit | 
-        Data-driven marketing optimization for retail success</p>
+                 <p>Retail Promo Uplift Dashboard | Built with Streamlit | 
+         Data-driven marketing optimisation for retail success</p>
         </div>
         """,
         unsafe_allow_html=True
