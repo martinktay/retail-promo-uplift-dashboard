@@ -17,7 +17,6 @@ warnings.filterwarnings('ignore')
 # Page configuration
 st.set_page_config(
     page_title="Retail Promo Uplift Dashboard",
-    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -160,7 +159,7 @@ def create_uplift_model(df):
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">📊 Retail Promo Uplift Dashboard</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">Retail Promo Uplift Dashboard</h1>', unsafe_allow_html=True)
     st.markdown("### Advanced Causal Analysis for Marketing Campaign Optimization")
     
     # Load data
@@ -191,7 +190,7 @@ def main():
             return
     
     # Sidebar for filters
-    st.sidebar.header("🎯 Dashboard Filters")
+    st.sidebar.header("Dashboard Filters")
     
     # Income range filter
     income_range = st.sidebar.slider(
@@ -280,7 +279,7 @@ def main():
     
     # Key Insights Section
     st.markdown("---")
-    st.subheader("🔍 Key Insights")
+    st.subheader("Key Insights")
     
     # Calculate insights with error handling
     try:
@@ -295,7 +294,7 @@ def main():
     with col1:
         st.markdown(f"""
         <div class="insight-box">
-        <h4>🎯 Best Performing Segment</h4>
+        <h4>Best Performing Segment</h4>
         <p><strong>{best_uplift_segment['customer_segment']}</strong> shows the highest uplift at 
         <strong>{best_uplift_segment['uplift_percentage']}%</strong> when exposed to promotions.</p>
         </div>
@@ -304,7 +303,7 @@ def main():
     with col2:
         st.markdown(f"""
         <div class="insight-box">
-        <h4>⚠️ Segment Needing Attention</h4>
+        <h4>Segment Needing Attention</h4>
         <p><strong>{worst_uplift_segment['customer_segment']}</strong> shows only 
         <strong>{worst_uplift_segment['uplift_percentage']}%</strong> uplift, suggesting 
         different promotional strategies may be needed.</p>
@@ -313,7 +312,7 @@ def main():
     
     # Uplift Analysis Charts
     st.markdown("---")
-    st.subheader("📈 Uplift Analysis by Customer Segment")
+    st.subheader("Uplift Analysis by Customer Segment")
     
     col1, col2 = st.columns(2)
     
@@ -365,7 +364,7 @@ def main():
     
     # Channel and Product Analysis
     st.markdown("---")
-    st.subheader("🛍️ Channel & Product Category Analysis")
+    st.subheader("Channel & Product Category Analysis")
     
     col1, col2 = st.columns(2)
     
@@ -413,7 +412,7 @@ def main():
     
     # Customer Status Analysis
     st.markdown("---")
-    st.subheader("👥 Customer Status Performance")
+    st.subheader("Customer Status Performance")
     
     status_analysis = filtered_df.groupby(['customer_status', 'promo_exposed']).agg({
         'purchase_made': 'mean',
@@ -439,7 +438,7 @@ def main():
     
     # Detailed Uplift Table
     st.markdown("---")
-    st.subheader("📊 Detailed Uplift Metrics")
+    st.subheader("Detailed Uplift Metrics")
     
     # Create detailed table
     detailed_uplift = uplift_analysis.merge(
@@ -455,14 +454,14 @@ def main():
     
     # Actionable Recommendations
     st.markdown("---")
-    st.subheader("💡 Actionable Marketing Recommendations")
+    st.subheader("Actionable Marketing Recommendations")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
         <div class="metric-card">
-        <h4>🎯 High-Impact Segments</h4>
+        <h4>High-Impact Segments</h4>
         <ul>
         <li>Prioritize Lapsed Customers (152% uplift) with re-engagement campaigns</li>
         <li>Target New Customers (125% uplift) with welcome promotions</li>
@@ -474,7 +473,7 @@ def main():
     with col2:
         st.markdown("""
         <div class="metric-card">
-        <h4>📱 Channel & Promo Strategy</h4>
+        <h4>Channel & Promo Strategy</h4>
         <ul>
         <li>Use SMS for high-income customers and urgent promotions</li>
         <li>Leverage Email for existing customer relationship building</li>
@@ -488,7 +487,7 @@ def main():
     st.markdown(
         """
         <div style='text-align: center; color: #666;'>
-        <p>📊 Retail Promo Uplift Dashboard | Built with Streamlit | 
+        <p>Retail Promo Uplift Dashboard | Built with Streamlit | 
         Data-driven marketing optimization for retail success</p>
         </div>
         """,
