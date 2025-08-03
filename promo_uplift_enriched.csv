@@ -445,7 +445,7 @@ customer_id,age,income,total_spent_last_month,promo_exposed,purchase_made,basket
 444,48,55100,127.25,0,0,5,Loyalty Points,Email,New,Electronics
 445,37,40100,253.97,0,0,4,Discount,Email,Existing,Books
 446,23,60200,63.91,1,0,2,BOGO,App Notification,Existing,Apparel
-447,67,-2500,5.64,1,0,3,BOGO,App Notification,Existing,Electronics
+447,67,2500,5.64,1,0,3,BOGO,App Notification,Existing,Electronics
 448,32,34300,19.46,1,0,4,Loyalty Points,App Notification,New,Electronics
 449,18,28300,29.96,0,0,2,BOGO,App Notification,Existing,Electronics
 450,43,26200,218.78,0,1,3,Loyalty Points,Email,Existing,Apparel
