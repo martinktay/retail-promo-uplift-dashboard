@@ -296,6 +296,20 @@ def main():
         st.write(f"Debug info: Total records: {len(df)}, Selected channels: {selected_channels}, Selected segments: {selected_segments}")
         return
     
+    # Debug information (hidden by default)
+    with st.expander("Debug Information"):
+        st.write(f"Total records in dataset: {len(df)}")
+        st.write(f"Filtered records: {len(filtered_df)}")
+        st.write(f"Selected channels: {selected_channels}")
+        st.write(f"Selected segments: {selected_segments}")
+        st.write(f"Selected promo types: {selected_promo_types}")
+        st.write(f"Selected categories: {selected_categories}")
+        st.write(f"Income range: £{income_range[0]:,} - £{income_range[1]:,}")
+        
+        # Show sample of filtered data
+        st.write("Sample of filtered data:")
+        st.dataframe(filtered_df.head())
+    
     # Filter summary and clear button
     st.sidebar.markdown("---")
     
@@ -323,17 +337,18 @@ def main():
         st.metric(
             "Total Transactions",
             f"{len(filtered_df):,}",
-            delta=f"{len(filtered_df) - len(df):,}"
+            delta=f"{len(filtered_df) - len(df):,}" if len(filtered_df) != len(df) else None
         )
     
     with col2:
         try:
             promo_rate = round(filtered_df['promo_exposed'].mean() * 100, 1)
             overall_promo_rate = round(df['promo_exposed'].mean() * 100, 1)
+            delta_value = promo_rate - overall_promo_rate
             st.metric(
                 "Promo Exposure Rate",
                 f"{promo_rate}%",
-                delta=f"{promo_rate - overall_promo_rate:.1f}%"
+                delta=f"{delta_value:.1f}%" if abs(delta_value) > 0.1 else None
             )
         except Exception as e:
             st.error(f"Error calculating promo rate: {e}")
@@ -342,10 +357,11 @@ def main():
         try:
             response_rate = round(filtered_df['purchase_made'].mean() * 100, 1)
             overall_response_rate = round(df['purchase_made'].mean() * 100, 1)
+            delta_value = response_rate - overall_response_rate
             st.metric(
                 "Overall Response Rate",
                 f"{response_rate}%",
-                delta=f"{response_rate - overall_response_rate:.1f}%"
+                delta=f"{delta_value:.1f}%" if abs(delta_value) > 0.1 else None
             )
         except Exception as e:
             st.error(f"Error calculating response rate: {e}")
@@ -354,10 +370,11 @@ def main():
         try:
             avg_basket = filtered_df['basket_size'].mean()
             overall_basket = df['basket_size'].mean()
+            delta_value = avg_basket - overall_basket
             st.metric(
                 "Avg Basket Size",
                 f"£{avg_basket:.2f}",
-                delta=f"£{avg_basket - overall_basket:.2f}"
+                delta=f"£{delta_value:.2f}" if abs(delta_value) > 0.01 else None
             )
         except Exception as e:
             st.error(f"Error calculating basket size: {e}")
