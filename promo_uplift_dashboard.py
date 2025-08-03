@@ -211,6 +211,15 @@ def main():
         (df['income'] <= income_range[1])
     ]
     
+    # Check if filtered_df is empty
+    if len(filtered_df) == 0:
+        st.error("No data matches the selected filters. Please adjust your filter criteria.")
+        st.write(f"Debug info: Total records: {len(df)}, Selected channels: {selected_channels}, Selected segments: {selected_segments}")
+        return
+    
+    # Debug information
+    st.sidebar.write(f"Filtered records: {len(filtered_df)}")
+    
     # Main dashboard content
     col1, col2, col3, col4 = st.columns(4)
     
@@ -222,31 +231,40 @@ def main():
         )
     
     with col2:
-        promo_rate = round(filtered_df['promo_exposed'].mean() * 100, 1)
-        overall_promo_rate = round(df['promo_exposed'].mean() * 100, 1)
-        st.metric(
-            "Promo Exposure Rate",
-            f"{promo_rate}%",
-            delta=f"{promo_rate - overall_promo_rate:.1f}%"
-        )
+        try:
+            promo_rate = round(filtered_df['promo_exposed'].mean() * 100, 1)
+            overall_promo_rate = round(df['promo_exposed'].mean() * 100, 1)
+            st.metric(
+                "Promo Exposure Rate",
+                f"{promo_rate}%",
+                delta=f"{promo_rate - overall_promo_rate:.1f}%"
+            )
+        except Exception as e:
+            st.error(f"Error calculating promo rate: {e}")
     
     with col3:
-        response_rate = round(filtered_df['purchase_made'].mean() * 100, 1)
-        overall_response_rate = round(df['purchase_made'].mean() * 100, 1)
-        st.metric(
-            "Overall Response Rate",
-            f"{response_rate}%",
-            delta=f"{response_rate - overall_response_rate:.1f}%"
-        )
+        try:
+            response_rate = round(filtered_df['purchase_made'].mean() * 100, 1)
+            overall_response_rate = round(df['purchase_made'].mean() * 100, 1)
+            st.metric(
+                "Overall Response Rate",
+                f"{response_rate}%",
+                delta=f"{response_rate - overall_response_rate:.1f}%"
+            )
+        except Exception as e:
+            st.error(f"Error calculating response rate: {e}")
     
     with col4:
-        avg_basket = filtered_df['basket_size'].mean()
-        overall_basket = df['basket_size'].mean()
-        st.metric(
-            "Avg Basket Size",
-            f"£{avg_basket:.2f}",
-            delta=f"£{avg_basket - overall_basket:.2f}"
-        )
+        try:
+            avg_basket = filtered_df['basket_size'].mean()
+            overall_basket = df['basket_size'].mean()
+            st.metric(
+                "Avg Basket Size",
+                f"£{avg_basket:.2f}",
+                delta=f"£{avg_basket - overall_basket:.2f}"
+            )
+        except Exception as e:
+            st.error(f"Error calculating basket size: {e}")
     
     # Key Insights Section
     st.markdown("---")
