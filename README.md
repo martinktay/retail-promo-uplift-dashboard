@@ -48,7 +48,7 @@ This dashboard implements **causal uplift modeling** to measure the true increme
 ### **Advanced Analytics Capabilities**
 
 - **Causal Uplift Modelling**: Two-model approach using Random Forest Classifiers
-- **Customer Segmentation**: RFM-based segmentation with behavioral overlays
+- **Customer Segmentation**: RFM-based segmentation with behavioural overlays
 - **Channel Effectiveness Analysis**: Multi-channel performance comparison
 - **Product Category Insights**: Category-specific promotional performance
 - **Real-time Filtering**: Dynamic data exploration with interactive filters
@@ -117,9 +117,9 @@ _Strategic recommendations section with high-impact segments and channel & promo
 
 ## 🔍 Deep Analysis: The Human Story Behind the Data
 
-### **The Psychology of Customer Behavior: What the Numbers Don't Tell You**
+### **The Psychology of Customer Behaviour: What the Numbers Don't Tell You**
 
-When I first started this analysis, I expected to find the typical patterns—high-value customers responding best to promotions, email outperforming SMS, and electronics driving the highest basket sizes. But the data told a completely different story, one that challenges everything we think we know about customer behavior.
+When I first started this analysis, I expected to find the typical patterns—high-value customers responding best to promotions, email outperforming SMS, and electronics driving the highest basket sizes. But the data told a completely different story, one that challenges everything we think we know about customer behaviour.
 
 ### **🎯 The Lapsed Customer Revelation: Why "Lost" Customers Are Actually Gold Mines**
 
@@ -127,7 +127,7 @@ When I first started this analysis, I expected to find the typical patterns—hi
 
 **The Human Story**: This discovery completely upended my assumptions about customer value. I realized that lapsed customers aren't "lost"—they're **sleeping giants**. These are people who once loved your brand enough to make purchases, but life got in the way. Maybe they got busy, maybe they tried a competitor, maybe they just forgot about you.
 
-**The Psychology**: When you reach out to a lapsed customer with a thoughtful, personalized message, you're not just selling—you're **rekindling a relationship**. It's like reaching out to an old friend. The response isn't just about the discount; it's about feeling valued and remembered.
+**The Psychology**: When you reach out to a lapsed customer with a thoughtful, personalised message, you're not just selling—you're **rekindling a relationship**. It's like reaching out to an old friend. The response isn't just about the discount; it's about feeling valued and remembered.
 
 **The Business Impact**: This insight alone could transform a company's marketing strategy. Instead of spending millions on acquiring new customers, you could invest in re-engaging existing ones at a fraction of the cost.
 
@@ -170,11 +170,11 @@ When I first started this analysis, I expected to find the typical patterns—hi
 #### **1. Lapsed Customer Re-engagement Campaign**
 
 - **Target**: Customers who haven't purchased in 90+ days
-- **Strategy**: Personalized "We miss you" campaigns with exclusive offers
+- **Strategy**: Personalised "We miss you" campaigns with exclusive offers
 - **Expected ROI**: 152% uplift based on analysis
 - **Implementation**:
   - Segment customers by last purchase date
-  - Create personalized messaging acknowledging their previous relationship
+  - Create personalised messaging acknowledging their previous relationship
   - Offer exclusive, time-limited promotions
   - Track response rates and adjust messaging
 
@@ -240,12 +240,12 @@ When I first started this analysis, I expected to find the typical patterns—hi
 #### **7. Machine Learning-Powered Recommendations**
 
 - **Target**: All customers with sufficient purchase history
-- **Strategy**: Individual-level personalization
+- **Strategy**: Individual-level personalisation
 - **Implementation**:
   - Real-time product recommendations
   - Dynamic pricing based on customer value
-  - Personalized promotional timing
-  - Behavioral trigger campaigns
+  - Personalised promotional timing
+  - Behavioural trigger campaigns
 
 #### **8. Predictive Customer Lifecycle Management**
 
@@ -270,7 +270,7 @@ When I first started this analysis, I expected to find the typical patterns—hi
 
 - **Basket Size**: Target 15% increase for electronics customers
 - **Customer Retention Rate**: Target 10% improvement
-- **Email/SMS Open Rates**: Target 40%+ for personalized campaigns
+- **Email/SMS Open Rates**: Target 40%+ for personalised campaigns
 - **Cross-Sell Success Rate**: Target 20% for category-specific promotions
 
 ### **🎯 Risk Mitigation Strategies**
@@ -366,7 +366,7 @@ Instead of treating all customers the same, companies need to:
 
 _Transform your lapsed customers into brand advocates_
 
-Instead of treating lapsed customers as lost causes, view them as "comeback kids" waiting for their moment to shine. Design campaigns that acknowledge their previous relationship with the brand while offering compelling reasons to return. Think personalized "We miss you" messages with exclusive offers that make them feel special.
+Instead of treating lapsed customers as lost causes, view them as "comeback kids" waiting for their moment to shine. Design campaigns that acknowledge their previous relationship with the brand while offering compelling reasons to return. Think personalised "We miss you" messages with exclusive offers that make them feel special.
 
 #### **🎁 The "Welcome to the Family" Approach**
 
@@ -390,7 +390,7 @@ Electronics purchases are gateway drugs to premium shopping behavior. When custo
 
 This project isn't just about current performance—it's about **future-proofing** marketing strategies. The insights here suggest that:
 
-- **Personalization isn't just nice-to-have**—it's essential for survival
+- **Personalisation isn't just nice-to-have**—it's essential for survival
 - **Channel strategy matters more than ever**—the right message on the wrong channel is wasted
 - **Customer psychology drives purchasing decisions**—understanding this is the key to success
 - **Data-driven decisions beat gut feelings**—but only when you understand the human story behind the numbers
@@ -414,99 +414,6 @@ In a world where everyone has access to the same data, the competitive advantage
 **The companies that will win in the next decade aren't the ones with the most data—they're the ones who understand what that data means about human behavior, emotions, and decision-making processes.**
 
 This analysis provides that understanding. It's not just a dashboard; it's a **strategic weapon** for companies that want to compete on customer intelligence rather than just customer data.
-
----
-
-## 🎯 For Recruiters & Hiring Managers
-
-### **🚀 Why This Project Stands Out**
-
-This isn't just another data science project—it's a **production-ready business intelligence solution** that demonstrates the full spectrum of modern data science capabilities. What makes this project exceptional is its ability to bridge the gap between complex statistical modeling and actionable business insights.
-
-### **🎯 Senior-Level Competencies Demonstrated**
-
-#### **Advanced Analytics & Statistical Modeling**
-
-- **Causal Inference Mastery**: Implemented sophisticated uplift modeling using Random Forest Classifiers with two-model approach
-- **Experimental Design**: Designed robust A/B testing framework for promotional campaign evaluation
-- **Statistical Rigor**: Applied proper control vs treatment group analysis with confidence intervals
-- **Predictive Modeling**: Built machine learning models that predict customer response probabilities
-
-#### **Full-Stack Data Science Development**
-
-- **End-to-End Solution**: From raw data processing to interactive dashboard deployment
-- **Production Engineering**: Implemented caching, error handling, and performance optimization
-- **Modular Architecture**: Clean separation of concerns with reusable components
-- **Version Control**: Professional Git workflow with meaningful commits and documentation
-
-#### **Business Intelligence & Stakeholder Communication**
-
-- **Executive-Level Insights**: Translated complex statistical findings into strategic recommendations
-- **Interactive Visualization**: Created intuitive dashboards that empower non-technical users
-- **ROI Quantification**: Demonstrated clear business impact with quantified uplift metrics
-- **Actionable Recommendations**: Provided specific, implementable marketing strategies
-
-#### **Technical Excellence & Innovation**
-
-- **Modern Tech Stack**: Streamlit, Plotly, Scikit-learn, Pandas with best practices
-- **Scalable Design**: Architecture that can handle real-time data and multiple clients
-- **Performance Optimization**: Efficient data processing and caching strategies
-- **User Experience**: Intuitive interface design with responsive layouts
-
-### **🏆 What Makes This Candidate Exceptional**
-
-#### **1. Business Impact Focus**
-
-Unlike many data scientists who focus purely on model accuracy, this project prioritizes **business outcomes**. Every analysis leads to actionable recommendations that can drive revenue growth.
-
-#### **2. Technical Depth with Communication Skills**
-
-The ability to build sophisticated machine learning models AND explain their business implications to executives is rare. This project demonstrates both technical excellence and exceptional communication skills.
-
-#### **3. Production-Ready Mindset**
-
-This isn't a Jupyter notebook—it's a deployable application with proper error handling, caching, and user experience considerations. This shows understanding of real-world software development.
-
-#### **4. Strategic Thinking**
-
-The analysis goes beyond "what happened" to explore "why it happened" and "what should we do about it." This demonstrates strategic thinking that's valuable at any level.
-
-### **🎯 Perfect For These Roles**
-
-- **Senior Data Scientist**: Advanced modeling and business impact focus
-- **Analytics Manager**: Strategic insights and stakeholder communication
-- **Business Intelligence Engineer**: Full-stack development and data pipeline expertise
-- **Marketing Analytics Specialist**: Domain expertise in promotional optimization
-- **Data Science Lead**: Technical leadership and project management capabilities
-
-### **💼 Industry Applications**
-
-This project demonstrates skills directly applicable to:
-
-- **E-commerce & Retail**: Customer segmentation, promotional optimization
-- **Financial Services**: Customer lifetime value, churn prediction
-- **Healthcare**: Patient engagement, treatment effectiveness
-- **Technology**: User acquisition, product adoption
-- **Consulting**: Client-facing analytics and strategic recommendations
-
-### **🎓 Educational & Professional Development**
-
-This project showcases continuous learning and professional development:
-
-- **Latest Technologies**: Streamlit, Plotly, modern Python ecosystem
-- **Best Practices**: Clean code, documentation, version control
-- **Business Acumen**: Understanding of marketing strategy and customer behavior
-- **Communication Skills**: Ability to present complex findings clearly
-
-### **🚀 Ready for Immediate Impact**
-
-This candidate can:
-
-- **Hit the ground running** with production-ready code and deployment experience
-- **Lead technical projects** with demonstrated full-stack capabilities
-- **Drive business decisions** with actionable insights and strategic recommendations
-- **Mentor junior team members** with comprehensive documentation and best practices
-- **Scale solutions** with modular architecture and cloud-ready design
 
 ---
 
@@ -548,7 +455,7 @@ streamlit run promo_uplift_dashboard.py
 The dashboard uses simulated promotional campaign data with the following features:
 
 - **Customer Demographics**: Age, income, customer status
-- **Behavioral Data**: Total spent, basket size, purchase history
+- **Behavioural Data**: Total spent, basket size, purchase history
 - **Campaign Variables**: Promo exposure, promo type, channel
 - **Outcome Metrics**: Purchase made, response rates
 
