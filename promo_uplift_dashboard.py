@@ -32,10 +32,25 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .metric-card {
-        background-color: #f0f2f6;
-        padding: 1rem;
+        background-color: #2e3e50;
+        color: #ffffff;
+        padding: 1.5rem;
         border-radius: 0.5rem;
         border-left: 4px solid #1f77b4;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .metric-card h4 {
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    .metric-card ul {
+        color: #e8f4fd;
+        margin: 0.5rem 0;
+    }
+    .metric-card li {
+        margin: 0.3rem 0;
+        line-height: 1.4;
     }
     .insight-box {
         background-color: #e8f4fd;
@@ -207,27 +222,30 @@ def main():
         )
     
     with col2:
-        promo_rate = (filtered_df['promo_exposed'].mean() * 100).round(1)
+        promo_rate = round(filtered_df['promo_exposed'].mean() * 100, 1)
+        overall_promo_rate = round(df['promo_exposed'].mean() * 100, 1)
         st.metric(
             "Promo Exposure Rate",
             f"{promo_rate}%",
-            delta=f"{promo_rate - (df['promo_exposed'].mean() * 100):.1f}%"
+            delta=f"{promo_rate - overall_promo_rate:.1f}%"
         )
     
     with col3:
-        response_rate = (filtered_df['purchase_made'].mean() * 100).round(1)
+        response_rate = round(filtered_df['purchase_made'].mean() * 100, 1)
+        overall_response_rate = round(df['purchase_made'].mean() * 100, 1)
         st.metric(
             "Overall Response Rate",
             f"{response_rate}%",
-            delta=f"{response_rate - (df['purchase_made'].mean() * 100):.1f}%"
+            delta=f"{response_rate - overall_response_rate:.1f}%"
         )
     
     with col4:
         avg_basket = filtered_df['basket_size'].mean()
+        overall_basket = df['basket_size'].mean()
         st.metric(
             "Avg Basket Size",
             f"£{avg_basket:.2f}",
-            delta=f"£{avg_basket - df['basket_size'].mean():.2f}"
+            delta=f"£{avg_basket - overall_basket:.2f}"
         )
     
     # Key Insights Section
@@ -416,9 +434,9 @@ def main():
         <div class="metric-card">
         <h4>🎯 High-Impact Segments</h4>
         <ul>
-        <li>Focus promotional spend on segments with >15% uplift</li>
-        <li>Develop personalized campaigns for Champions and Loyal Customers</li>
-        <li>Test new promotional strategies for At Risk customers</li>
+        <li>Prioritize Lapsed Customers (152% uplift) with re-engagement campaigns</li>
+        <li>Target New Customers (125% uplift) with welcome promotions</li>
+        <li>Develop premium strategies for High-Value Existing customers</li>
         </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -426,11 +444,11 @@ def main():
     with col2:
         st.markdown("""
         <div class="metric-card">
-        <h4>📱 Channel Optimization</h4>
+        <h4>📱 Channel & Promo Strategy</h4>
         <ul>
-        <li>Allocate more budget to high-performing channels</li>
-        <li>Test channel-specific promotional messages</li>
-        <li>Optimize timing for different customer segments</li>
+        <li>Use SMS for high-income customers and urgent promotions</li>
+        <li>Leverage Email for existing customer relationship building</li>
+        <li>Test BOGO offers for New customers to increase basket size</li>
         </ul>
         </div>
         """, unsafe_allow_html=True)

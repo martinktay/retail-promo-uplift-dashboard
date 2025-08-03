@@ -25,18 +25,21 @@ retail-promo-uplift-dashboard/
 ## Features
 
 ### 📊 Exploratory Analysis
+
 - Promotional response rates by customer segment
 - Channel effectiveness comparison
 - Customer lifetime value impact
 - Basket size analysis by promo type
 
 ### 🎯 Uplift Modeling
+
 - Two-model approach for causal inference
 - Segment-specific uplift estimates
 - Treatment vs control response analysis
 - Profit impact projections
 
 ### 📈 Interactive Dashboard
+
 - Real-time segment selection
 - Dynamic visualization updates
 - Actionable marketing recommendations
@@ -45,11 +48,13 @@ retail-promo-uplift-dashboard/
 ## Quick Start
 
 1. **Install dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Run the dashboard:**
+
    ```bash
    streamlit run promo_uplift_dashboard.py
    ```
@@ -68,12 +73,15 @@ The `rfm_enriched.csv` contains real retail transaction data with RFM (Recency, 
 ## Methodology
 
 ### Uplift Modeling Approach
+
 We employ a two-model approach for causal inference:
+
 1. **Treatment Model:** Predicts purchase probability for treated customers
 2. **Control Model:** Predicts purchase probability for control customers
 3. **Uplift Score:** Difference between treatment and control predictions
 
 ### Segmentation Strategy
+
 - **RFM Segments:** Champions, Loyal Customers, At Risk, Can't Lose, Lost
 - **Customer Tiers:** Bronze, Silver, Gold, Platinum
 - **Transaction Types:** Full Price, Discount, Return
@@ -82,6 +90,7 @@ We employ a two-model approach for causal inference:
 ## Business Impact
 
 This dashboard enables marketing teams to:
+
 - **Optimize promotional spend** by targeting high-uplift segments
 - **Improve customer retention** through personalized campaigns
 - **Increase basket sizes** with strategic promo type selection
@@ -101,4 +110,4 @@ This project serves as a demonstration of advanced marketing analytics technique
 
 ## License
 
-MIT License - feel free to use this code for educational and commercial purposes. 
+MIT License - feel free to use this code for educational and commercial purposes.
