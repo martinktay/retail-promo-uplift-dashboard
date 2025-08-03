@@ -53,11 +53,23 @@ st.markdown("""
         line-height: 1.4;
     }
     .insight-box {
-        background-color: #e8f4fd;
-        padding: 1rem;
+        background-color: #2e3e50;
+        color: #ffffff;
+        padding: 1.5rem;
         border-radius: 0.5rem;
         border-left: 4px solid #ff7f0e;
         margin: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .insight-box h4 {
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    .insight-box p {
+        color: #e8f4fd;
+        margin: 0.5rem 0;
+        line-height: 1.4;
     }
 </style>
 """, unsafe_allow_html=True)
