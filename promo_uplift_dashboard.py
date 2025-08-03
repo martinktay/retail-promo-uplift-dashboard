@@ -55,10 +55,11 @@ st.markdown("""
         padding: 1.5rem;
         border-radius: 0.5rem;
         margin: 1rem 0;
-        height: 120px;
+        min-height: 140px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        overflow: hidden;
     }
     .insight-box h4 {
         color: #ffffff;
@@ -67,8 +68,10 @@ st.markdown("""
     }
     .insight-box p {
         color: #e8f4fd;
-        margin: 0.5rem 0;
-        line-height: 1.4;
+        margin: 0.3rem 0;
+        line-height: 1.3;
+        font-size: 0.9rem;
+        word-wrap: break-word;
     }
     
     /* Sidebar styling */
@@ -233,39 +236,47 @@ def main():
     
     # Customer segment filter
     st.sidebar.subheader("Customer Segments")
-    selected_segments = st.sidebar.multiselect(
+    segment_options = ["All"] + list(df['customer_segment'].unique())
+    selected_segments = st.sidebar.selectbox(
         "Select segments",
-        options=df['customer_segment'].unique(),
-        default=df['customer_segment'].unique(),
+        options=segment_options,
+        index=0,
         label_visibility="collapsed"
     )
+    selected_segments = list(df['customer_segment'].unique()) if selected_segments == "All" else [selected_segments]
     
     # Channel filter
     st.sidebar.subheader("Channels")
-    selected_channels = st.sidebar.multiselect(
+    channel_options = ["All"] + list(df['channel'].unique())
+    selected_channels = st.sidebar.selectbox(
         "Select channels",
-        options=df['channel'].unique(),
-        default=df['channel'].unique(),
+        options=channel_options,
+        index=0,
         label_visibility="collapsed"
     )
+    selected_channels = list(df['channel'].unique()) if selected_channels == "All" else [selected_channels]
     
     # Promo type filter
     st.sidebar.subheader("Promo Types")
-    selected_promo_types = st.sidebar.multiselect(
+    promo_options = ["All"] + list(df['promo_type'].unique())
+    selected_promo_types = st.sidebar.selectbox(
         "Select promo types",
-        options=df['promo_type'].unique(),
-        default=df['promo_type'].unique(),
+        options=promo_options,
+        index=0,
         label_visibility="collapsed"
     )
+    selected_promo_types = list(df['promo_type'].unique()) if selected_promo_types == "All" else [selected_promo_types]
     
     # Product category filter
     st.sidebar.subheader("Product Categories")
-    selected_categories = st.sidebar.multiselect(
+    category_options = ["All"] + list(df['product_category'].unique())
+    selected_categories = st.sidebar.selectbox(
         "Select categories",
-        options=df['product_category'].unique(),
-        default=df['product_category'].unique(),
+        options=category_options,
+        index=0,
         label_visibility="collapsed"
     )
+    selected_categories = list(df['product_category'].unique()) if selected_categories == "All" else [selected_categories]
     
     # Apply filters
     filtered_df = df[
@@ -369,7 +380,7 @@ def main():
         <h4>Best Performing Segment</h4>
         <p><strong>{best_uplift_segment['customer_segment']}</strong> shows the highest uplift at 
         <strong>{best_uplift_segment['uplift_percentage']}%</strong> when exposed to promotions.</p>
-        <p><em>Recommendation: Prioritize this segment for targeted campaigns to maximize ROI.</em></p>
+        <p><em>Recommendation: Prioritize this segment for targeted campaigns.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -380,7 +391,7 @@ def main():
         <p><strong>{worst_uplift_segment['customer_segment']}</strong> shows only 
         <strong>{worst_uplift_segment['uplift_percentage']}%</strong> uplift, suggesting 
         different promotional strategies may be needed.</p>
-        <p><em>Action: Review current approach and test alternative promotional tactics.</em></p>
+        <p><em>Action: Review current approach and test alternative tactics.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
