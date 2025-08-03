@@ -70,6 +70,37 @@ st.markdown("""
         margin: 0.5rem 0;
         line-height: 1.4;
     }
+    
+    /* Sidebar styling */
+    .css-1d391kg {
+        background-color: #1e1e1e;
+    }
+    
+    /* Filter section styling */
+    .css-1d391kg .css-1v0mbdj {
+        background-color: #2e3e50;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    /* Multiselect styling */
+    .stMultiSelect > div > div {
+        background-color: #2e3e50;
+        border: 1px solid #4a5568;
+        border-radius: 0.5rem;
+    }
+    
+    .stMultiSelect > div > div:hover {
+        border-color: #1f77b4;
+    }
+    
+    /* Selected items styling */
+    .stMultiSelect [data-baseweb="tag"] {
+        background-color: #1f77b4;
+        color: white;
+        border-radius: 0.25rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -201,23 +232,47 @@ def main():
     )
     
     # Customer segment filter
+    st.sidebar.subheader("Customer Segments")
     selected_segments = st.sidebar.multiselect(
-        "Customer Segments",
+        "Select segments",
         options=df['customer_segment'].unique(),
-        default=df['customer_segment'].unique()
+        default=df['customer_segment'].unique(),
+        label_visibility="collapsed"
     )
     
     # Channel filter
+    st.sidebar.subheader("Channels")
     selected_channels = st.sidebar.multiselect(
-        "Channels",
+        "Select channels",
         options=df['channel'].unique(),
-        default=df['channel'].unique()
+        default=df['channel'].unique(),
+        label_visibility="collapsed"
+    )
+    
+    # Promo type filter
+    st.sidebar.subheader("Promo Types")
+    selected_promo_types = st.sidebar.multiselect(
+        "Select promo types",
+        options=df['promo_type'].unique(),
+        default=df['promo_type'].unique(),
+        label_visibility="collapsed"
+    )
+    
+    # Product category filter
+    st.sidebar.subheader("Product Categories")
+    selected_categories = st.sidebar.multiselect(
+        "Select categories",
+        options=df['product_category'].unique(),
+        default=df['product_category'].unique(),
+        label_visibility="collapsed"
     )
     
     # Apply filters
     filtered_df = df[
         (df['channel'].isin(selected_channels)) &
         (df['customer_segment'].isin(selected_segments)) &
+        (df['promo_type'].isin(selected_promo_types)) &
+        (df['product_category'].isin(selected_categories)) &
         (df['income'] >= income_range[0]) &
         (df['income'] <= income_range[1])
     ]
@@ -228,8 +283,25 @@ def main():
         st.write(f"Debug info: Total records: {len(df)}, Selected channels: {selected_channels}, Selected segments: {selected_segments}")
         return
     
-    # Debug information
-    st.sidebar.write(f"Filtered records: {len(filtered_df)}")
+    # Filter summary and clear button
+    st.sidebar.markdown("---")
+    
+    # Show filter summary
+    col1, col2 = st.sidebar.columns([2, 1])
+    with col1:
+        st.metric("Filtered Records", f"{len(filtered_df):,}")
+    with col2:
+        st.metric("Total Records", f"{len(df):,}")
+    
+    # Filter summary
+    if len(filtered_df) < len(df):
+        st.sidebar.info(f"Showing {len(filtered_df):,} of {len(df):,} records")
+    else:
+        st.sidebar.success("Showing all records")
+    
+    # Clear filters button
+    if st.sidebar.button("Clear All Filters", type="secondary"):
+        st.rerun()
     
     # Main dashboard content
     col1, col2, col3, col4 = st.columns(4)
