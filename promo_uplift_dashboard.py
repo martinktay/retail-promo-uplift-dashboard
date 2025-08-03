@@ -35,7 +35,6 @@ st.markdown("""
         color: #ffffff;
         padding: 1.5rem;
         border-radius: 0.5rem;
-        border-left: 4px solid #1f77b4;
     }
     .metric-card h4 {
         color: #ffffff;
@@ -55,8 +54,11 @@ st.markdown("""
         color: #ffffff;
         padding: 1.5rem;
         border-radius: 0.5rem;
-        border-left: 4px solid #ff7f0e;
         margin: 1rem 0;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .insight-box h4 {
         color: #ffffff;
@@ -295,6 +297,7 @@ def main():
         <h4>Best Performing Segment</h4>
         <p><strong>{best_uplift_segment['customer_segment']}</strong> shows the highest uplift at 
         <strong>{best_uplift_segment['uplift_percentage']}%</strong> when exposed to promotions.</p>
+        <p><em>Recommendation: Prioritize this segment for targeted campaigns to maximize ROI.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -305,6 +308,7 @@ def main():
         <p><strong>{worst_uplift_segment['customer_segment']}</strong> shows only 
         <strong>{worst_uplift_segment['uplift_percentage']}%</strong> uplift, suggesting 
         different promotional strategies may be needed.</p>
+        <p><em>Action: Review current approach and test alternative promotional tactics.</em></p>
         </div>
         """, unsafe_allow_html=True)
     
