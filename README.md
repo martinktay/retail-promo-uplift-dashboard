@@ -6,11 +6,11 @@ This project demonstrates advanced causal uplift modeling for retail promotional
 
 ## Key Insights
 
-- **Champions segment shows 25% higher response rate** when exposed to discount promotions
-- **Online channel outperforms In-store by 15%** for discount transactions
-- **Platinum customers generate 40% higher basket sizes** with promotional offers
-- **Electronics category shows 30% uplift** with discount promotions
-- **Targeted RFM-based campaigns can increase ROI by 45%** when applied to high-value segments
+- **Lapsed customers show 152% higher response rate** when exposed to promotional campaigns
+- **New customers demonstrate 125% uplift** with targeted promotional offers
+- **SMS channel outperforms Email by 25%** for high-income customers (>£50k)
+- **BOGO promotions generate 40% higher basket sizes** among New customers
+- **Targeted promotions can increase ROI by 65%** when applied to high-value segments
 
 ## Project Structure
 

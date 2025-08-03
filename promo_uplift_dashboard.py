@@ -49,84 +49,47 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    """Load and preprocess the RFM enriched dataset"""
-    df = pd.read_csv('rfm_enriched.csv')
-    
-    # Convert purchase_date to datetime
-    df['purchase_date'] = pd.to_datetime(df['purchase_date'])
+    """Load and preprocess the promotional uplift dataset"""
+    df = pd.read_csv('promo_uplift_enriched.csv')
     
     # Create additional features for analysis
-    df['year'] = df['purchase_date'].dt.year
-    df['month'] = df['purchase_date'].dt.month
-    df['quarter'] = df['purchase_date'].dt.quarter
+    # Adjust income bins based on actual data distribution
+    income_bins = [0, 30000, 50000, float('inf')]
+    income_labels = ['Low', 'Medium', 'High']
+    df['income_segment'] = pd.cut(df['income'], 
+                                 bins=income_bins, 
+                                 labels=income_labels)
     
-    # Create promotional exposure based on transaction type
-    df['promo_exposed'] = (df['transaction_type'] == 'Discount').astype(int)
-    
-    # Create purchase indicator
-    df['purchase_made'] = (df['transaction_type'] != 'Return').astype(int)
-    
-    # Create basket size (purchase amount for successful purchases)
-    df['basket_size'] = np.where(df['purchase_made'] == 1, df['purchase_amount'], 0)
+    # Create age segments
+    df['age_segment'] = pd.cut(df['age'], 
+                              bins=[0, 25, 35, 50, 65, float('inf')], 
+                              labels=['18-25', '26-35', '36-50', '51-65', '65+'])
     
     return df
 
 @st.cache_data
-def calculate_rfm_metrics(df):
-    """Calculate RFM metrics for customer segmentation"""
-    # Get the most recent date for recency calculation
-    max_date = df['purchase_date'].max()
-    
-    # Calculate RFM metrics by customer
-    rfm = df.groupby('customer_id').agg({
-        'purchase_date': lambda x: (max_date - x.max()).days,  # Recency
-        'customer_id': 'count',  # Frequency
-        'purchase_amount': 'sum'  # Monetary
-    }).rename(columns={
-        'purchase_date': 'recency',
-        'customer_id': 'frequency',
-        'purchase_amount': 'monetary'
-    })
-    
-    # Create RFM scores (1-4, where 4 is best)
-    rfm['r_score'] = pd.qcut(rfm['recency'], q=4, labels=[4, 3, 2, 1])
-    rfm['f_score'] = pd.qcut(rfm['frequency'], q=4, labels=[1, 2, 3, 4])
-    rfm['m_score'] = pd.qcut(rfm['monetary'], q=4, labels=[1, 2, 3, 4])
-    
-    # Convert to numeric
-    rfm['r_score'] = rfm['r_score'].astype(int)
-    rfm['f_score'] = rfm['f_score'].astype(int)
-    rfm['m_score'] = rfm['m_score'].astype(int)
-    
-    # Create RFM score
-    rfm['rfm_score'] = rfm['r_score'] + rfm['f_score'] + rfm['m_score']
-    
-    # Create customer segments
-    def segment_customers(row):
-        if row['rfm_score'] >= 10:
-            return 'Champions'
-        elif row['rfm_score'] >= 8:
-            return 'Loyal Customers'
-        elif row['rfm_score'] >= 6:
-            return 'At Risk'
-        elif row['rfm_score'] >= 4:
-            return 'Can\'t Lose'
+def calculate_customer_segments(df):
+    """Calculate customer segments based on behavior and demographics"""
+    # Create customer segments based on total spent and customer status
+    def create_segment(row):
+        if row['customer_status'] == 'New':
+            return 'New Customers'
+        elif row['customer_status'] == 'Lapsed':
+            return 'Lapsed Customers'
+        elif row['total_spent_last_month'] > 200:
+            return 'High-Value Existing'
         else:
-            return 'Lost'
+            return 'Regular Existing'
     
-    rfm['customer_segment'] = rfm.apply(segment_customers, axis=1)
+    df['customer_segment'] = df.apply(create_segment, axis=1)
     
-    return rfm
+    return df
 
 @st.cache_data
-def calculate_uplift_metrics(df, rfm):
+def calculate_uplift_metrics(df):
     """Calculate uplift metrics for promotional campaigns"""
-    # Merge RFM data with transaction data
-    df_with_rfm = df.merge(rfm[['customer_segment', 'rfm_score']], 
-                          left_on='customer_id', right_index=True, how='left')
-    
     # Calculate response rates by segment and promo exposure
-    uplift_analysis = df_with_rfm.groupby(['customer_segment', 'promo_exposed']).agg({
+    uplift_analysis = df.groupby(['customer_segment', 'promo_exposed']).agg({
         'purchase_made': ['mean', 'count'],
         'basket_size': 'mean'
     }).round(4)
@@ -146,31 +109,27 @@ def calculate_uplift_metrics(df, rfm):
     
     return uplift_analysis, uplift_pivot
 
-def create_uplift_model(df, rfm):
+def create_uplift_model(df):
     """Create uplift model using two-model approach"""
-    # Prepare features
-    df_with_rfm = df.merge(rfm[['customer_segment', 'rfm_score']], 
-                          left_on='customer_id', right_index=True, how='left')
-    
     # Create features
-    features = ['rfm_score', 'purchase_amount', 'promo_exposed']
-    categorical_features = ['customer_segment', 'channel', 'product_category', 'customer_tier']
+    features = ['age', 'income', 'total_spent_last_month', 'promo_exposed']
+    categorical_features = ['customer_segment', 'channel', 'product_category', 'customer_status', 'promo_type']
     
     # Encode categorical features
     le = LabelEncoder()
     for feature in categorical_features:
-        df_with_rfm[f'{feature}_encoded'] = le.fit_transform(df_with_rfm[feature].astype(str))
+        df[f'{feature}_encoded'] = le.fit_transform(df[feature].astype(str))
         features.append(f'{feature}_encoded')
     
     # Split data
-    X = df_with_rfm[features]
-    y = df_with_rfm['purchase_made']
+    X = df[features]
+    y = df['purchase_made']
     
     # Train model
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X, y)
     
-    return model, features, df_with_rfm
+    return model, features, df
 
 def main():
     # Header
@@ -179,27 +138,47 @@ def main():
     
     # Load data
     with st.spinner("Loading and processing data..."):
-        df = load_data()
-        rfm = calculate_rfm_metrics(df)
-        uplift_analysis, uplift_pivot = calculate_uplift_metrics(df, rfm)
-        model, features, df_with_rfm = create_uplift_model(df, rfm)
+        try:
+            df = load_data()
+            if df is None:
+                st.error("Failed to load data. Please check if 'promo_uplift_enriched.csv' exists.")
+                return
+                
+            df = calculate_customer_segments(df)
+            if df is None:
+                st.error("Failed to calculate customer segments.")
+                return
+                
+            uplift_analysis, uplift_pivot = calculate_uplift_metrics(df)
+            if uplift_analysis is None or uplift_pivot is None:
+                st.error("Failed to calculate uplift metrics.")
+                return
+                
+            model, features, df_with_model = create_uplift_model(df)
+            if model is None:
+                st.error("Failed to create uplift model.")
+                return
+                
+        except Exception as e:
+            st.error(f"Error during data processing: {e}")
+            return
     
     # Sidebar for filters
     st.sidebar.header("🎯 Dashboard Filters")
     
-    # Date range filter
-    date_range = st.sidebar.date_input(
-        "Select Date Range",
-        value=(df['purchase_date'].min().date(), df['purchase_date'].max().date()),
-        min_value=df['purchase_date'].min().date(),
-        max_value=df['purchase_date'].max().date()
+    # Income range filter
+    income_range = st.sidebar.slider(
+        "Income Range (£)",
+        min_value=int(df['income'].min()),
+        max_value=int(df['income'].max()),
+        value=(int(df['income'].min()), int(df['income'].max()))
     )
     
     # Customer segment filter
     selected_segments = st.sidebar.multiselect(
         "Customer Segments",
-        options=rfm['customer_segment'].unique(),
-        default=rfm['customer_segment'].unique()
+        options=df['customer_segment'].unique(),
+        default=df['customer_segment'].unique()
     )
     
     # Channel filter
@@ -211,12 +190,11 @@ def main():
     
     # Apply filters
     filtered_df = df[
-        (df['purchase_date'].dt.date >= date_range[0]) &
-        (df['purchase_date'].dt.date <= date_range[1]) &
-        (df['channel'].isin(selected_channels))
+        (df['channel'].isin(selected_channels)) &
+        (df['customer_segment'].isin(selected_segments)) &
+        (df['income'] >= income_range[0]) &
+        (df['income'] <= income_range[1])
     ]
-    
-    filtered_rfm = rfm[rfm['customer_segment'].isin(selected_segments)]
     
     # Main dashboard content
     col1, col2, col3, col4 = st.columns(4)
@@ -256,9 +234,13 @@ def main():
     st.markdown("---")
     st.subheader("🔍 Key Insights")
     
-    # Calculate insights
-    best_uplift_segment = uplift_pivot.loc[uplift_pivot['uplift_percentage'].idxmax()]
-    worst_uplift_segment = uplift_pivot.loc[uplift_pivot['uplift_percentage'].idxmin()]
+    # Calculate insights with error handling
+    try:
+        best_uplift_segment = uplift_pivot.loc[uplift_pivot['uplift_percentage'].idxmax()]
+        worst_uplift_segment = uplift_pivot.loc[uplift_pivot['uplift_percentage'].idxmin()]
+    except Exception as e:
+        st.error(f"Error calculating insights: {e}")
+        return
     
     col1, col2 = st.columns(2)
     
@@ -381,31 +363,31 @@ def main():
         )
         st.plotly_chart(fig_category, use_container_width=True)
     
-    # Customer Tier Analysis
+    # Customer Status Analysis
     st.markdown("---")
-    st.subheader("👑 Customer Tier Performance")
+    st.subheader("👥 Customer Status Performance")
     
-    tier_analysis = filtered_df.groupby(['customer_tier', 'promo_exposed']).agg({
+    status_analysis = filtered_df.groupby(['customer_status', 'promo_exposed']).agg({
         'purchase_made': 'mean',
         'basket_size': 'mean',
         'customer_id': 'count'
     }).reset_index()
     
-    fig_tier = px.scatter(
-        tier_analysis,
+    fig_status = px.scatter(
+        status_analysis,
         x='purchase_made',
         y='basket_size',
         size='customer_id',
-        color='customer_tier',
+        color='customer_status',
         symbol='promo_exposed',
-        title='Customer Tier Performance: Response Rate vs Basket Size',
-        hover_data=['customer_tier', 'promo_exposed']
+        title='Customer Status Performance: Response Rate vs Basket Size',
+        hover_data=['customer_status', 'promo_exposed']
     )
-    fig_tier.update_layout(
+    fig_status.update_layout(
         xaxis_title="Response Rate",
         yaxis_title="Average Basket Size (£)"
     )
-    st.plotly_chart(fig_tier, use_container_width=True)
+    st.plotly_chart(fig_status, use_container_width=True)
     
     # Detailed Uplift Table
     st.markdown("---")

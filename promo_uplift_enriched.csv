@@ -1,0 +1,1001 @@
+customer_id,age,income,total_spent_last_month,promo_exposed,purchase_made,basket_size,promo_type,channel,customer_status,product_category
+1,63,29200,188.67,1,0,4,Coupon,App Notification,Existing,Apparel
+2,20,53500,19.45,1,0,4,Coupon,SMS,New,Apparel
+3,46,52700,135.19,0,0,5,Coupon,Email,Existing,Electronics
+4,52,44600,45.25,1,0,2,Discount,App Notification,Existing,Electronics
+5,56,49700,248.04,0,0,3,Discount,Email,Existing,Electronics
+6,35,42900,163.48,1,1,11,Discount,App Notification,New,Apparel
+7,37,56300,183.65,0,1,6,Loyalty Points,App Notification,Existing,Books
+8,60,46000,181.05,1,0,4,BOGO,Email,Existing,Groceries
+9,40,41000,73.12,0,0,4,Loyalty Points,SMS,Existing,Apparel
+10,51,58900,17.41,1,0,3,BOGO,Email,New,Electronics
+11,50,63900,106.58,0,0,4,Loyalty Points,SMS,Existing,Books
+12,67,65100,70.69,1,1,3,BOGO,SMS,Lapsed,Books
+13,65,30100,168.66,0,0,6,Discount,Email,Existing,Apparel
+14,27,37000,50.5,1,0,3,BOGO,App Notification,New,Electronics
+15,50,19500,50.64,0,1,6,Coupon,SMS,Existing,Groceries
+16,64,41400,78.65,1,0,4,Discount,Email,Lapsed,Groceries
+17,50,51200,38.07,0,0,3,Loyalty Points,App Notification,Existing,Electronics
+18,65,43000,102.84,1,0,5,Coupon,App Notification,New,Electronics
+19,43,74000,347.47,1,0,4,Coupon,App Notification,Existing,Books
+20,37,38900,382.11,0,0,5,Discount,Email,Existing,Apparel
+21,32,28700,22.91,0,0,4,Coupon,Email,Existing,Apparel
+22,54,53500,80.31,1,0,3,Discount,App Notification,Existing,Apparel
+23,50,47200,189.98,1,0,6,BOGO,App Notification,Existing,Groceries
+24,34,53200,51.48,0,0,3,Discount,App Notification,Existing,Groceries
+25,22,49600,503.84,1,0,2,Discount,App Notification,Existing,Groceries
+26,67,48700,245.27,0,0,5,Loyalty Points,Email,Existing,Apparel
+27,21,13200,49.77,0,0,3,Coupon,App Notification,Existing,Electronics
+28,20,34100,22.56,1,0,6,Loyalty Points,SMS,Existing,Electronics
+29,38,36100,15.33,0,0,4,Loyalty Points,SMS,Existing,Apparel
+30,57,39800,41.64,1,0,5,Loyalty Points,Email,New,Apparel
+31,20,38300,100.69,1,0,3,Loyalty Points,SMS,Existing,Electronics
+32,38,51200,277.89,1,0,2,Loyalty Points,SMS,Existing,Electronics
+33,65,54000,30.4,1,1,4,Coupon,SMS,New,Groceries
+34,66,28000,7.43,1,0,4,Coupon,Email,Existing,Books
+35,25,55300,444.57,1,1,6,Coupon,SMS,Lapsed,Books
+36,59,53800,81.71,1,0,6,Loyalty Points,App Notification,Lapsed,Apparel
+37,53,52000,80.2,0,0,2,Coupon,SMS,Existing,Books
+38,46,23700,148.93,0,0,3,Loyalty Points,SMS,Existing,Books
+39,56,51600,108.89,0,0,7,Coupon,SMS,Existing,Books
+40,51,46200,69.98,0,0,2,Coupon,App Notification,New,Groceries
+41,39,59400,251.46,0,0,4,Coupon,Email,Existing,Groceries
+42,48,71800,314.21,1,0,4,Coupon,Email,Lapsed,Electronics
+43,45,68800,350.06,0,0,5,Discount,SMS,Lapsed,Apparel
+44,52,46700,293.96,1,0,5,Coupon,App Notification,Lapsed,Books
+45,51,45000,234.51,0,0,6,Coupon,SMS,Lapsed,Electronics
+46,30,54500,42.89,1,0,3,Discount,Email,New,Groceries
+47,58,28300,263.09,1,0,2,BOGO,Email,Lapsed,Books
+48,21,23200,64.24,0,0,2,BOGO,App Notification,Existing,Apparel
+49,60,37900,255.9,1,0,4,Discount,App Notification,Lapsed,Books
+50,23,63300,20.6,0,0,5,BOGO,Email,Existing,Groceries
+51,18,40000,109.99,1,0,6,Coupon,Email,Existing,Books
+52,29,67500,99.85,1,1,7,Loyalty Points,Email,New,Books
+53,52,3200,7.48,0,0,6,Loyalty Points,SMS,New,Books
+54,28,21200,430.87,1,0,3,Coupon,Email,Existing,Books
+55,40,43100,225.7,0,0,5,Coupon,Email,Lapsed,Groceries
+56,31,58300,301.25,1,0,4,BOGO,App Notification,Existing,Electronics
+57,36,44000,219.16,1,0,4,Discount,Email,New,Books
+58,54,43600,84.01,0,0,5,Loyalty Points,Email,Existing,Apparel
+59,33,43200,141.37,0,0,2,Coupon,App Notification,Existing,Books
+60,61,18600,27.56,1,0,2,Discount,Email,Existing,Apparel
+61,45,62400,35.26,1,0,7,Discount,App Notification,New,Apparel
+62,62,34800,78.33,0,0,2,Coupon,App Notification,Existing,Books
+63,48,61300,206.39,0,0,3,Discount,App Notification,Lapsed,Books
+64,24,43900,183.06,1,0,3,Loyalty Points,App Notification,Lapsed,Apparel
+65,63,61000,298.56,0,1,3,Loyalty Points,App Notification,Existing,Groceries
+66,69,50100,151.92,0,0,5,Discount,App Notification,Lapsed,Electronics
+67,44,43400,225.2,1,0,7,Coupon,App Notification,Existing,Apparel
+68,34,48400,8.98,0,0,6,Discount,Email,Existing,Groceries
+69,24,22900,541.5,1,0,3,BOGO,SMS,Existing,Electronics
+70,32,45100,374.4,1,0,4,Coupon,Email,New,Electronics
+71,57,70700,551.7,0,0,5,Coupon,App Notification,Existing,Electronics
+72,29,64600,38.14,0,0,3,Coupon,App Notification,Lapsed,Books
+73,25,30200,31.56,1,1,5,Loyalty Points,Email,New,Books
+74,19,52600,155.41,1,1,2,Coupon,SMS,New,Apparel
+75,61,48700,364.92,0,0,1,Coupon,Email,Lapsed,Books
+76,55,57300,268.17,1,0,4,Loyalty Points,Email,New,Groceries
+77,43,46400,59.85,0,0,5,Loyalty Points,Email,Existing,Electronics
+78,68,41500,128.97,1,0,2,Loyalty Points,SMS,Lapsed,Electronics
+79,38,65000,53.67,1,0,6,Coupon,App Notification,Lapsed,Electronics
+80,67,48200,166.13,1,1,3,Coupon,SMS,Lapsed,Books
+81,30,63800,167.65,0,0,2,Loyalty Points,Email,Existing,Books
+82,36,59600,17.36,0,0,3,Loyalty Points,Email,New,Books
+83,35,40100,200.38,1,0,5,BOGO,SMS,Existing,Groceries
+84,19,42500,20.41,1,0,3,Loyalty Points,SMS,Existing,Books
+85,69,73900,5.66,1,0,1,Discount,App Notification,Existing,Books
+86,62,47900,386.38,1,0,2,BOGO,App Notification,Lapsed,Books
+87,59,33600,57.12,0,0,3,Loyalty Points,SMS,Lapsed,Groceries
+88,66,27000,125.14,0,0,6,Loyalty Points,App Notification,Existing,Books
+89,45,59600,556,0,0,4,Loyalty Points,Email,New,Apparel
+90,67,47400,196.39,0,0,5,Loyalty Points,SMS,New,Books
+91,40,33100,93.24,0,0,3,Discount,App Notification,Existing,Apparel
+92,21,55100,381.89,1,0,4,Loyalty Points,Email,Existing,Groceries
+93,21,47400,48.31,0,1,2,Coupon,SMS,New,Apparel
+94,29,20100,133.99,0,1,1,BOGO,App Notification,Existing,Groceries
+95,39,53800,166.82,0,0,1,Loyalty Points,Email,Existing,Books
+96,43,65000,176.29,0,0,4,Coupon,SMS,Existing,Books
+97,57,83400,3.53,0,1,2,Discount,App Notification,New,Apparel
+98,59,45500,94.63,1,0,5,BOGO,Email,Existing,Books
+99,52,48500,144.68,0,0,2,Loyalty Points,Email,New,Apparel
+100,21,69100,122.44,1,0,5,BOGO,Email,Existing,Groceries
+101,29,47500,345.13,0,0,3,Loyalty Points,Email,Existing,Books
+102,21,49100,256.71,0,0,2,Discount,SMS,Existing,Books
+103,69,35500,538.13,0,0,2,Discount,Email,Existing,Books
+104,48,24100,50.66,0,0,4,BOGO,SMS,Existing,Electronics
+105,24,58700,33.97,1,1,2,BOGO,SMS,Lapsed,Electronics
+106,27,25900,45.44,1,0,5,BOGO,App Notification,New,Apparel
+107,41,62100,213.64,1,0,4,Discount,SMS,Existing,Electronics
+108,32,33200,57.99,0,0,6,Coupon,Email,New,Books
+109,56,49000,218.47,0,0,2,BOGO,SMS,New,Electronics
+110,37,39400,229.99,1,0,6,Loyalty Points,SMS,Existing,Apparel
+111,24,62600,16.96,0,1,4,Discount,App Notification,Lapsed,Electronics
+112,30,49500,269.42,0,0,6,BOGO,SMS,New,Groceries
+113,45,74400,75.37,1,1,3,Discount,App Notification,Lapsed,Groceries
+114,56,28700,49.98,1,0,7,BOGO,SMS,Lapsed,Electronics
+115,35,51200,59.9,0,0,3,Discount,App Notification,Existing,Groceries
+116,64,45700,453.24,1,1,4,Discount,SMS,Existing,Groceries
+117,28,49200,185.83,1,0,3,BOGO,Email,Lapsed,Electronics
+118,53,68900,209.8,1,1,6,Loyalty Points,SMS,Existing,Groceries
+119,53,53800,48.96,0,0,3,Discount,App Notification,Existing,Apparel
+120,19,27800,89.25,0,0,4,Loyalty Points,App Notification,Existing,Apparel
+121,65,53000,332.66,0,0,5,Loyalty Points,Email,Existing,Books
+122,63,38800,83.16,1,0,6,Discount,Email,Existing,Apparel
+123,34,37900,334.96,0,0,2,Discount,App Notification,Lapsed,Books
+124,23,60700,44.62,1,0,5,Discount,Email,Existing,Books
+125,58,36000,263.63,1,0,4,Loyalty Points,SMS,Existing,Electronics
+126,63,39300,24.84,0,0,8,Discount,SMS,Existing,Groceries
+127,40,45500,345.63,1,0,4,Discount,Email,Lapsed,Electronics
+128,64,59200,223.38,1,0,5,Discount,SMS,Existing,Books
+129,33,53700,630.79,0,1,4,Discount,SMS,Existing,Electronics
+130,58,41500,5.99,0,0,7,BOGO,Email,Existing,Groceries
+131,43,40900,28.28,1,0,4,Discount,App Notification,Existing,Groceries
+132,63,27600,5.53,1,1,2,Loyalty Points,SMS,Existing,Groceries
+133,67,33600,3.38,0,0,3,Loyalty Points,Email,Lapsed,Books
+134,18,35200,374.23,1,0,4,Coupon,App Notification,Lapsed,Electronics
+135,53,42800,199.62,0,1,2,BOGO,SMS,Existing,Electronics
+136,47,74800,206.43,1,0,5,BOGO,SMS,Existing,Books
+137,19,34900,94.36,1,0,3,Coupon,Email,Lapsed,Books
+138,37,40600,10.95,0,0,3,Loyalty Points,SMS,Existing,Apparel
+139,22,14200,112.84,1,0,5,Loyalty Points,App Notification,New,Electronics
+140,48,54000,34.24,1,0,3,Discount,Email,Existing,Groceries
+141,25,21300,545.43,0,0,3,Coupon,Email,Existing,Electronics
+142,47,31400,421.64,0,0,4,Loyalty Points,Email,Lapsed,Apparel
+143,56,60600,71.6,1,0,2,Coupon,Email,Existing,Groceries
+144,19,13400,3.5,1,0,1,Coupon,App Notification,New,Apparel
+145,30,46400,4.23,1,0,8,BOGO,App Notification,Lapsed,Books
+146,21,57000,150.51,1,0,5,Loyalty Points,App Notification,Lapsed,Books
+147,62,67900,346.5,1,0,6,Loyalty Points,App Notification,Existing,Electronics
+148,69,31200,83.81,1,0,4,Discount,App Notification,Existing,Books
+149,25,35600,214.26,1,0,4,Loyalty Points,App Notification,Existing,Books
+150,56,72100,390.36,1,0,1,BOGO,Email,Existing,Electronics
+151,42,44600,202.24,1,0,2,Loyalty Points,Email,Existing,Apparel
+152,24,34000,1.23,0,0,2,Discount,Email,Existing,Apparel
+153,31,34200,160.21,0,0,7,Loyalty Points,App Notification,Lapsed,Groceries
+154,46,30400,38.44,1,0,5,Coupon,Email,Existing,Groceries
+155,62,38400,321.95,0,0,3,BOGO,App Notification,New,Apparel
+156,38,61300,106.33,0,0,4,Discount,Email,New,Books
+157,54,58300,115.68,0,0,5,Discount,App Notification,New,Groceries
+158,66,27400,72.46,1,0,5,Coupon,App Notification,Existing,Apparel
+159,50,48200,52.16,0,1,2,BOGO,App Notification,Existing,Books
+160,58,39000,34.86,0,0,4,Loyalty Points,SMS,Lapsed,Books
+161,42,56700,104.74,1,1,4,BOGO,SMS,Lapsed,Apparel
+162,63,42700,154.26,1,0,7,BOGO,App Notification,Lapsed,Electronics
+163,31,50600,462.4,1,0,2,BOGO,Email,Lapsed,Apparel
+164,26,42600,102.81,1,1,3,BOGO,App Notification,Existing,Books
+165,32,12200,77.65,1,0,4,BOGO,App Notification,Existing,Groceries
+166,24,45700,340.94,0,0,3,BOGO,SMS,Existing,Books
+167,19,25900,238.27,0,0,6,Coupon,App Notification,New,Books
+168,48,56200,24.38,0,0,4,Discount,SMS,Lapsed,Apparel
+169,24,34800,245.74,1,0,2,Coupon,Email,Existing,Books
+170,58,35900,604.01,0,0,4,Loyalty Points,Email,New,Electronics
+171,28,44900,137.52,0,1,3,Discount,Email,Existing,Groceries
+172,30,53700,134.9,0,0,4,Discount,App Notification,Existing,Apparel
+173,30,42500,257.16,1,1,3,Loyalty Points,SMS,New,Electronics
+174,43,69600,44.59,0,0,5,Discount,App Notification,Existing,Groceries
+175,60,69700,91.46,0,0,3,Loyalty Points,Email,Existing,Electronics
+176,67,70700,76.23,0,1,3,BOGO,App Notification,Lapsed,Books
+177,25,41500,1098.54,0,0,6,BOGO,SMS,Lapsed,Books
+178,31,22800,35.26,0,0,4,Discount,SMS,Existing,Electronics
+179,62,63300,38.22,0,0,2,Discount,Email,Existing,Groceries
+180,19,38800,123.57,0,0,5,BOGO,Email,Lapsed,Electronics
+181,59,45600,64.13,0,0,4,BOGO,Email,Existing,Electronics
+182,32,54400,409.09,1,0,4,Loyalty Points,App Notification,Existing,Electronics
+183,41,20900,114.71,1,0,2,Discount,SMS,Lapsed,Groceries
+184,51,69400,230.97,1,1,4,Discount,App Notification,Existing,Electronics
+185,21,58100,340.97,1,0,6,Coupon,Email,New,Books
+186,35,50300,63.5,0,1,3,BOGO,SMS,Lapsed,Apparel
+187,42,58400,263.9,0,1,1,BOGO,Email,Existing,Books
+188,64,53400,101.86,0,0,4,Discount,SMS,Existing,Books
+189,41,46800,58.75,0,0,5,Coupon,SMS,Existing,Electronics
+190,23,40400,441.65,1,1,4,Loyalty Points,Email,New,Apparel
+191,51,33900,166.5,0,0,4,Loyalty Points,SMS,Existing,Electronics
+192,68,49300,137.17,0,0,6,BOGO,SMS,New,Apparel
+193,55,50400,39.84,1,0,3,Coupon,Email,New,Books
+194,20,61200,463.83,1,0,3,Coupon,SMS,Existing,Groceries
+195,36,48000,203.13,0,0,3,Loyalty Points,Email,Existing,Electronics
+196,64,32200,589.86,1,1,4,BOGO,App Notification,Lapsed,Books
+197,63,21400,9.07,1,0,3,Discount,App Notification,Lapsed,Apparel
+198,53,43100,24.8,0,0,5,Coupon,Email,New,Books
+199,36,44600,419.69,0,0,4,Discount,SMS,Lapsed,Books
+200,45,43500,120.21,1,1,2,BOGO,App Notification,Existing,Books
+201,64,22000,125.84,0,1,4,Loyalty Points,Email,Existing,Groceries
+202,27,61100,50.54,1,0,6,Coupon,Email,New,Electronics
+203,35,61100,134.05,0,0,6,Discount,SMS,Existing,Electronics
+204,21,32700,115.44,1,0,4,Coupon,SMS,Lapsed,Electronics
+205,29,57100,255.21,0,0,5,Coupon,SMS,Existing,Groceries
+206,44,59300,201.84,1,0,6,Coupon,Email,New,Groceries
+207,46,45600,320.88,1,0,4,BOGO,App Notification,Existing,Apparel
+208,29,30800,305.67,1,0,4,Discount,Email,Existing,Electronics
+209,28,69200,109.47,1,0,1,Coupon,SMS,Existing,Apparel
+210,21,50700,71.76,0,0,5,Discount,SMS,Lapsed,Books
+211,63,41200,79.14,0,0,4,BOGO,Email,Existing,Apparel
+212,41,56600,919.85,0,0,4,Coupon,SMS,Lapsed,Apparel
+213,43,69300,105.27,1,0,2,Coupon,SMS,Lapsed,Books
+214,45,37500,281.68,0,0,2,Coupon,Email,New,Books
+215,64,55400,17.27,0,1,4,Discount,App Notification,New,Apparel
+216,21,74100,112.27,1,1,4,Discount,SMS,Existing,Apparel
+217,53,28300,79.76,1,1,2,Coupon,App Notification,New,Electronics
+218,32,36800,34.92,1,0,6,Discount,App Notification,Existing,Groceries
+219,39,36000,4.83,0,0,4,Discount,App Notification,New,Books
+220,66,42600,58.06,0,0,3,Coupon,App Notification,Existing,Apparel
+221,41,41900,315.32,1,0,3,Coupon,SMS,Existing,Groceries
+222,41,49500,70.62,0,0,7,Loyalty Points,SMS,Existing,Apparel
+223,54,32700,412.74,1,0,4,Loyalty Points,Email,Existing,Electronics
+224,22,35700,172.95,0,0,2,Coupon,SMS,Lapsed,Apparel
+225,23,49500,326.68,0,0,4,BOGO,Email,Existing,Books
+226,66,47300,1471.62,0,0,1,Coupon,App Notification,Existing,Apparel
+227,27,58100,204.64,0,0,4,Coupon,Email,New,Apparel
+228,20,51100,83.37,1,0,4,Coupon,Email,New,Books
+229,55,56600,74.22,1,0,4,Coupon,SMS,New,Electronics
+230,51,27900,720.08,0,0,2,Coupon,Email,Existing,Books
+231,23,39200,250.75,1,0,6,Coupon,App Notification,Existing,Apparel
+232,27,72700,139.63,0,0,11,Coupon,SMS,New,Electronics
+233,33,50900,48.18,0,1,1,Coupon,SMS,Existing,Books
+234,46,56200,134.63,0,0,4,Loyalty Points,SMS,New,Groceries
+235,20,49100,287.21,0,0,6,Loyalty Points,App Notification,Existing,Groceries
+236,28,51400,735.52,0,0,5,Loyalty Points,Email,Existing,Groceries
+237,54,41500,223.44,1,0,6,BOGO,SMS,Existing,Books
+238,21,98600,4.99,1,1,6,Discount,Email,Existing,Electronics
+239,66,39100,125.16,0,0,1,BOGO,App Notification,Existing,Books
+240,21,44400,351.68,1,1,4,BOGO,App Notification,Existing,Apparel
+241,41,8600,142.88,1,0,3,Coupon,App Notification,New,Books
+242,45,61600,84.35,1,0,5,Loyalty Points,SMS,Existing,Groceries
+243,52,36700,394.81,0,0,2,Coupon,SMS,Existing,Groceries
+244,55,44100,172.36,1,0,2,Coupon,Email,Lapsed,Apparel
+245,67,37100,140.39,0,0,1,Loyalty Points,Email,Lapsed,Books
+246,41,42900,133.22,1,0,5,Coupon,SMS,Lapsed,Groceries
+247,39,40700,228.82,1,0,5,Discount,App Notification,Lapsed,Books
+248,43,44400,121.5,1,0,3,Discount,App Notification,Existing,Groceries
+249,35,44200,167.46,1,0,2,BOGO,SMS,New,Apparel
+250,20,42700,68.08,1,0,2,Loyalty Points,Email,New,Electronics
+251,63,42500,37.72,0,0,3,Discount,App Notification,Lapsed,Electronics
+252,28,64600,343.02,1,0,4,BOGO,SMS,Existing,Groceries
+253,26,58200,76.9,0,0,1,Coupon,Email,New,Groceries
+254,50,58300,26.86,1,0,6,BOGO,Email,Existing,Books
+255,43,34000,40.73,0,0,4,BOGO,App Notification,Existing,Electronics
+256,53,63900,106.43,0,0,4,Discount,App Notification,Existing,Books
+257,21,62000,67.21,1,0,2,BOGO,App Notification,Existing,Groceries
+258,69,36700,237.54,1,0,2,Loyalty Points,App Notification,Existing,Electronics
+259,19,67900,86.13,1,0,1,Coupon,Email,Existing,Books
+260,25,34800,176.31,0,0,5,Loyalty Points,SMS,Existing,Groceries
+261,24,17400,36.57,0,0,4,Coupon,Email,New,Books
+262,53,61500,29.37,0,0,3,Loyalty Points,App Notification,Lapsed,Books
+263,51,43200,473.55,1,0,3,Coupon,SMS,Existing,Groceries
+264,57,59700,399.88,1,0,5,Loyalty Points,Email,Existing,Books
+265,36,33700,456.04,0,0,5,Coupon,SMS,Existing,Books
+266,46,26100,136.02,0,0,1,Discount,Email,Existing,Electronics
+267,56,63500,14.61,1,0,1,BOGO,SMS,Existing,Books
+268,23,23900,74.27,0,0,7,BOGO,Email,Existing,Apparel
+269,27,21600,426.4,1,0,7,BOGO,Email,Existing,Groceries
+270,58,16100,109.81,0,0,4,BOGO,App Notification,New,Books
+271,59,3100,79.16,0,0,1,Coupon,Email,Lapsed,Groceries
+272,22,29400,70.05,1,0,6,Loyalty Points,App Notification,Existing,Apparel
+273,41,12500,159.45,1,0,6,Loyalty Points,Email,New,Groceries
+274,58,44500,120.4,0,0,4,Discount,SMS,Existing,Apparel
+275,39,11500,93.97,0,0,7,BOGO,SMS,Existing,Apparel
+276,43,28600,110,0,0,3,BOGO,App Notification,Existing,Electronics
+277,68,80000,62.03,0,0,5,Discount,Email,Lapsed,Apparel
+278,54,50200,42.59,0,0,4,BOGO,App Notification,Lapsed,Electronics
+279,62,45800,45.09,1,0,1,Discount,SMS,Existing,Books
+280,46,20700,7.82,0,0,5,BOGO,Email,Lapsed,Electronics
+281,53,41300,582.29,1,1,5,Loyalty Points,App Notification,Lapsed,Electronics
+282,37,45700,627.02,1,0,2,Discount,SMS,Existing,Books
+283,35,20900,21.71,0,1,3,Loyalty Points,SMS,Lapsed,Groceries
+284,57,46900,15.34,1,0,6,BOGO,Email,Existing,Groceries
+285,62,62900,107.66,0,1,7,Loyalty Points,Email,New,Books
+286,58,39800,288.74,1,0,4,Loyalty Points,Email,Lapsed,Apparel
+287,32,42000,349.78,0,0,5,Coupon,App Notification,New,Electronics
+288,32,14400,4.32,1,0,4,BOGO,App Notification,Existing,Groceries
+289,41,24000,66.62,0,0,3,Coupon,Email,Existing,Groceries
+290,46,60900,153.28,0,1,3,Discount,Email,Lapsed,Apparel
+291,34,35100,29.03,1,1,4,Coupon,Email,New,Groceries
+292,66,31100,701.24,0,0,1,BOGO,SMS,Existing,Groceries
+293,64,34600,57.88,0,0,3,Coupon,Email,Existing,Groceries
+294,42,44100,151.59,0,0,5,Coupon,App Notification,Existing,Books
+295,33,27600,23.23,0,0,2,BOGO,SMS,Existing,Groceries
+296,67,46900,82.77,1,1,5,Loyalty Points,Email,Existing,Groceries
+297,34,24600,26.28,1,0,5,Discount,App Notification,Lapsed,Books
+298,64,56600,485.74,1,0,4,Coupon,SMS,New,Groceries
+299,64,29100,598.59,1,0,6,BOGO,SMS,Lapsed,Apparel
+300,38,64800,155.88,0,0,6,Coupon,App Notification,Existing,Electronics
+301,61,44800,86.11,0,0,4,Discount,App Notification,Existing,Books
+302,65,32300,78.16,0,0,3,Discount,SMS,Existing,Books
+303,44,58700,514.56,1,0,5,Discount,App Notification,Lapsed,Groceries
+304,22,24400,193.17,0,0,2,Coupon,SMS,New,Electronics
+305,39,36800,105.39,1,0,5,Loyalty Points,SMS,Existing,Apparel
+306,50,45000,295.29,0,0,4,Loyalty Points,SMS,New,Apparel
+307,57,43200,153.27,1,0,4,Loyalty Points,SMS,Existing,Electronics
+308,19,14900,49.17,1,1,4,BOGO,Email,Existing,Electronics
+309,52,31200,54.49,0,0,5,Loyalty Points,App Notification,New,Apparel
+310,60,47500,64.37,1,0,5,Loyalty Points,Email,Existing,Groceries
+311,36,25200,3.23,0,0,5,Discount,Email,Existing,Electronics
+312,57,64000,59.09,1,0,1,BOGO,Email,Existing,Electronics
+313,44,52400,189.01,1,0,3,Discount,Email,Existing,Groceries
+314,57,37300,279.99,1,0,5,Coupon,SMS,Existing,Books
+315,53,41700,24.08,1,1,6,Coupon,SMS,New,Electronics
+316,56,72900,716.87,0,1,9,Discount,SMS,New,Groceries
+317,19,59000,134.18,1,0,5,BOGO,SMS,Lapsed,Apparel
+318,58,50700,12.85,1,1,3,Loyalty Points,Email,Lapsed,Books
+319,35,23800,562.6,1,0,4,Loyalty Points,SMS,Existing,Electronics
+320,63,69400,63.4,1,0,5,BOGO,Email,Existing,Groceries
+321,40,60800,74.13,0,0,2,Loyalty Points,SMS,Existing,Books
+322,43,42800,123,0,0,3,Loyalty Points,App Notification,Existing,Groceries
+323,28,36800,78.42,1,0,6,Discount,App Notification,Existing,Apparel
+324,65,42200,39.12,0,0,5,Coupon,App Notification,Existing,Electronics
+325,18,27000,27.19,1,0,6,BOGO,App Notification,New,Groceries
+326,53,37900,142.54,1,0,4,BOGO,SMS,Lapsed,Electronics
+327,67,56400,14.63,0,0,4,Loyalty Points,App Notification,Existing,Groceries
+328,37,17900,247.46,0,0,4,Loyalty Points,App Notification,Existing,Electronics
+329,48,40300,83.68,1,0,6,Coupon,Email,Existing,Electronics
+330,25,46700,981.91,0,0,6,BOGO,App Notification,Existing,Books
+331,57,46600,12.98,1,0,7,Discount,SMS,Existing,Groceries
+332,41,27300,9.96,1,1,5,Coupon,Email,Existing,Groceries
+333,37,27300,58.02,1,0,4,Discount,SMS,New,Electronics
+334,32,61300,86.65,0,0,7,Coupon,Email,Existing,Electronics
+335,47,26600,335.59,0,0,2,Discount,SMS,Existing,Books
+336,37,60100,354.01,1,0,4,Discount,App Notification,Existing,Apparel
+337,55,37800,257.17,1,1,2,Discount,Email,New,Groceries
+338,19,61200,349.43,0,0,3,BOGO,App Notification,Existing,Electronics
+339,23,38700,260.64,0,0,4,Loyalty Points,SMS,New,Books
+340,59,27500,412.72,1,0,2,BOGO,SMS,Existing,Electronics
+341,35,57800,124.92,1,0,6,Discount,Email,Existing,Groceries
+342,53,44700,64.71,1,0,3,Loyalty Points,SMS,Existing,Books
+343,31,66700,198.56,0,0,4,Discount,SMS,Lapsed,Books
+344,43,58400,90.69,1,0,2,Coupon,Email,Existing,Electronics
+345,51,41600,14.01,1,0,4,Loyalty Points,App Notification,Lapsed,Electronics
+346,47,38300,387.36,1,0,3,BOGO,Email,New,Apparel
+347,24,45400,359.27,0,0,3,Discount,SMS,Existing,Apparel
+348,47,47900,137.16,1,0,5,Loyalty Points,SMS,Existing,Groceries
+349,35,31800,125.48,1,0,3,BOGO,Email,Existing,Groceries
+350,39,57600,25.31,0,0,6,Coupon,Email,Lapsed,Books
+351,34,39000,26.91,0,0,3,Discount,App Notification,Lapsed,Groceries
+352,48,38700,319.66,1,0,4,BOGO,SMS,Existing,Apparel
+353,34,36900,384.84,0,0,3,Loyalty Points,SMS,Existing,Apparel
+354,48,48500,1.14,0,0,3,Coupon,App Notification,Existing,Apparel
+355,30,34600,306.4,1,0,3,Discount,Email,Lapsed,Electronics
+356,44,47000,153.56,0,0,3,BOGO,Email,Existing,Apparel
+357,37,86500,115.02,1,0,7,Coupon,App Notification,Lapsed,Apparel
+358,34,44200,129.06,1,0,3,Coupon,Email,Existing,Groceries
+359,46,38500,249.69,0,0,5,BOGO,App Notification,Existing,Apparel
+360,56,20000,0.48,0,0,3,Discount,Email,Existing,Apparel
+361,52,45800,12.95,1,1,1,BOGO,Email,Lapsed,Electronics
+362,25,28400,368.19,1,1,7,Coupon,Email,Lapsed,Apparel
+363,60,39400,1210.76,1,1,3,Coupon,App Notification,New,Groceries
+364,55,47300,55.3,0,0,3,Loyalty Points,App Notification,Existing,Electronics
+365,32,19000,102.2,1,1,2,Discount,App Notification,Lapsed,Books
+366,67,47400,242.1,0,0,4,BOGO,SMS,New,Apparel
+367,18,49600,218.6,1,0,6,Discount,SMS,Existing,Apparel
+368,50,25500,306.25,1,0,4,Discount,App Notification,New,Apparel
+369,20,39100,490.96,0,1,2,Coupon,SMS,Existing,Books
+370,56,17500,61.32,1,0,1,Loyalty Points,SMS,Existing,Electronics
+371,55,68600,149.76,1,0,2,BOGO,Email,Existing,Electronics
+372,65,50000,30.28,1,0,4,BOGO,Email,Existing,Apparel
+373,32,42300,703.4,1,0,4,Loyalty Points,Email,Existing,Books
+374,59,42500,283.27,1,0,4,Loyalty Points,SMS,Existing,Groceries
+375,35,62000,41.49,1,1,2,Coupon,SMS,New,Books
+376,55,43600,269.3,1,0,5,Coupon,App Notification,Lapsed,Apparel
+377,48,50000,320.72,1,0,2,BOGO,SMS,Existing,Books
+378,37,67800,29.34,0,0,3,Loyalty Points,SMS,Existing,Electronics
+379,24,39800,138.32,0,0,8,Discount,App Notification,Existing,Electronics
+380,54,28600,346.02,0,0,1,Discount,App Notification,New,Electronics
+381,44,32600,85.29,1,0,2,Loyalty Points,App Notification,Existing,Groceries
+382,25,66400,10.36,0,0,2,BOGO,Email,Lapsed,Books
+383,31,46400,84.34,1,0,4,Discount,App Notification,Existing,Apparel
+384,67,37500,304.63,0,1,4,Discount,Email,Existing,Apparel
+385,32,59600,21.16,1,0,3,Loyalty Points,SMS,Existing,Electronics
+386,24,60000,74.28,1,1,5,Coupon,SMS,Existing,Apparel
+387,50,37900,384.26,0,0,4,Discount,Email,Existing,Groceries
+388,69,30400,35.33,0,0,2,Coupon,Email,Lapsed,Books
+389,51,21400,98.42,1,0,3,Discount,Email,Existing,Groceries
+390,21,18100,161.57,1,0,4,BOGO,SMS,Existing,Books
+391,18,41000,39.19,1,0,4,Coupon,SMS,New,Books
+392,58,31600,241.23,1,0,5,BOGO,App Notification,Existing,Books
+393,31,72900,304.02,1,0,6,Coupon,App Notification,Existing,Apparel
+394,48,45900,201.34,0,0,4,Loyalty Points,SMS,New,Apparel
+395,55,15900,395.82,0,0,5,Loyalty Points,App Notification,New,Apparel
+396,67,66300,28.01,0,0,3,Discount,App Notification,Lapsed,Apparel
+397,37,47400,0.66,1,0,6,BOGO,Email,Existing,Apparel
+398,20,55600,62.11,1,0,2,Coupon,SMS,Existing,Apparel
+399,52,55200,366.56,1,0,5,BOGO,Email,New,Electronics
+400,63,49400,27.16,0,0,3,BOGO,SMS,Existing,Electronics
+401,50,52900,288.65,1,0,5,Discount,SMS,Existing,Electronics
+402,32,48600,529.86,1,1,3,Loyalty Points,Email,Lapsed,Groceries
+403,20,28400,164.55,0,0,5,Coupon,SMS,Lapsed,Groceries
+404,45,50500,429.18,0,0,3,Discount,Email,New,Groceries
+405,44,60400,57.03,1,0,3,BOGO,Email,Existing,Books
+406,64,41800,256.62,0,0,6,Loyalty Points,SMS,Existing,Books
+407,64,53300,302.95,1,0,2,Loyalty Points,SMS,Existing,Groceries
+408,50,51300,133.69,1,0,4,Coupon,Email,Existing,Electronics
+409,36,72200,184.64,1,0,6,Loyalty Points,App Notification,Lapsed,Apparel
+410,50,41200,18.62,1,0,3,BOGO,App Notification,Existing,Apparel
+411,48,40600,64.69,0,0,5,Loyalty Points,SMS,Existing,Apparel
+412,21,43200,15.98,1,0,3,BOGO,SMS,Existing,Books
+413,49,43500,54.74,1,1,3,Coupon,App Notification,Existing,Groceries
+414,59,10900,446.19,0,0,2,BOGO,SMS,Existing,Electronics
+415,45,35400,6.27,1,0,7,Loyalty Points,SMS,Existing,Apparel
+416,33,49500,137.37,1,0,3,Loyalty Points,App Notification,Existing,Groceries
+417,66,44900,147.91,0,0,4,Coupon,SMS,New,Groceries
+418,60,33000,67.31,1,1,5,Coupon,App Notification,Lapsed,Books
+419,45,35000,304.31,1,0,4,Loyalty Points,App Notification,New,Books
+420,32,39700,178.1,1,0,4,Coupon,App Notification,Existing,Books
+421,65,33000,43.44,1,0,4,BOGO,SMS,Lapsed,Books
+422,39,37300,127.42,0,0,5,Discount,Email,Existing,Groceries
+423,48,36900,4.73,0,0,5,BOGO,Email,Existing,Books
+424,38,58400,3.61,1,0,4,BOGO,Email,Lapsed,Apparel
+425,49,60200,265.52,0,0,7,Coupon,SMS,Lapsed,Electronics
+426,24,59000,37.81,0,0,4,Discount,SMS,Existing,Books
+427,50,51400,691.44,0,0,3,Loyalty Points,SMS,Existing,Apparel
+428,25,34400,88.7,1,0,3,Coupon,SMS,Existing,Electronics
+429,31,59400,239.94,1,0,3,BOGO,Email,Existing,Books
+430,42,40300,124.16,1,0,6,Discount,App Notification,Existing,Books
+431,49,45300,105.34,1,0,6,Coupon,SMS,New,Electronics
+432,45,65100,220.49,0,0,2,BOGO,SMS,New,Apparel
+433,19,46300,196.73,0,0,2,BOGO,SMS,Existing,Apparel
+434,34,48700,418.89,1,0,2,Loyalty Points,App Notification,Existing,Groceries
+435,44,23800,17.64,0,0,6,Loyalty Points,Email,Lapsed,Groceries
+436,19,52300,141.27,1,0,4,Discount,SMS,Existing,Books
+437,25,30300,187.14,0,0,5,BOGO,Email,Existing,Apparel
+438,55,60200,209.88,0,0,2,BOGO,SMS,Lapsed,Apparel
+439,37,42200,196.42,1,0,4,Loyalty Points,Email,Existing,Books
+440,66,11500,91.72,1,0,5,BOGO,SMS,Lapsed,Electronics
+441,54,39600,6.31,1,0,1,Loyalty Points,Email,Existing,Electronics
+442,38,41600,250,1,0,5,BOGO,SMS,Lapsed,Groceries
+443,43,52300,8.97,1,0,4,Loyalty Points,SMS,Existing,Books
+444,48,55100,127.25,0,0,5,Loyalty Points,Email,New,Electronics
+445,37,40100,253.97,0,0,4,Discount,Email,Existing,Books
+446,23,60200,63.91,1,0,2,BOGO,App Notification,Existing,Apparel
+447,67,-2500,5.64,1,0,3,BOGO,App Notification,Existing,Electronics
+448,32,34300,19.46,1,0,4,Loyalty Points,App Notification,New,Electronics
+449,18,28300,29.96,0,0,2,BOGO,App Notification,Existing,Electronics
+450,43,26200,218.78,0,1,3,Loyalty Points,Email,Existing,Apparel
+451,46,59400,211.99,1,0,5,Discount,App Notification,Existing,Groceries
+452,19,57400,766.99,1,0,6,Discount,SMS,Existing,Books
+453,39,33400,78.28,1,1,4,Loyalty Points,Email,Lapsed,Electronics
+454,46,62700,28.17,0,0,2,Coupon,SMS,New,Apparel
+455,26,46500,37.88,0,1,6,Discount,App Notification,Existing,Electronics
+456,58,38700,6.54,0,1,5,BOGO,App Notification,Existing,Books
+457,38,34600,347.32,1,0,6,Loyalty Points,App Notification,Existing,Books
+458,49,33300,15.84,0,0,4,Loyalty Points,Email,Existing,Electronics
+459,49,52100,448.22,1,1,5,Discount,SMS,Lapsed,Apparel
+460,64,54800,9.93,0,0,4,Loyalty Points,SMS,Lapsed,Electronics
+461,61,48600,335.66,0,0,3,Discount,Email,Existing,Apparel
+462,57,14200,43.57,1,0,2,Loyalty Points,App Notification,Existing,Groceries
+463,43,49400,4.67,0,0,3,Discount,App Notification,Existing,Electronics
+464,65,53500,241.83,0,0,3,BOGO,Email,Existing,Apparel
+465,30,35000,0.53,0,0,3,Coupon,SMS,Existing,Electronics
+466,20,45600,70.67,0,0,6,Coupon,SMS,Existing,Books
+467,49,17000,11.76,0,0,5,Coupon,SMS,Existing,Books
+468,50,26600,25.88,0,0,4,Coupon,SMS,Existing,Electronics
+469,50,40100,26.8,0,0,4,Discount,App Notification,Lapsed,Electronics
+470,59,40400,256.89,0,0,3,Loyalty Points,App Notification,Existing,Apparel
+471,59,50300,716.22,1,0,3,Coupon,Email,Lapsed,Apparel
+472,30,27200,56.1,0,0,4,Loyalty Points,Email,Existing,Books
+473,60,39900,101.8,0,0,1,Discount,Email,Existing,Apparel
+474,23,37700,93.81,0,1,3,Discount,App Notification,Existing,Books
+475,21,52900,59.36,1,0,4,Coupon,App Notification,New,Groceries
+476,55,66300,249.45,0,1,5,BOGO,App Notification,Lapsed,Electronics
+477,23,70800,63.3,1,0,5,Coupon,Email,New,Apparel
+478,68,21500,144.48,1,1,2,Loyalty Points,App Notification,Existing,Books
+479,20,44300,27.8,0,0,2,Coupon,SMS,New,Books
+480,44,28300,376.73,1,0,4,Discount,App Notification,New,Electronics
+481,57,44000,232.55,0,0,3,Discount,SMS,Existing,Electronics
+482,37,51300,154.77,0,0,4,Loyalty Points,SMS,New,Electronics
+483,35,46200,190.43,0,0,8,Loyalty Points,SMS,Existing,Apparel
+484,37,44300,50.82,0,0,4,Loyalty Points,App Notification,Existing,Groceries
+485,47,67200,371.65,0,0,1,Coupon,Email,Lapsed,Groceries
+486,27,55800,26.11,0,0,3,Coupon,SMS,Existing,Groceries
+487,69,40900,425.98,1,0,7,BOGO,SMS,Existing,Groceries
+488,40,45400,189.94,0,0,5,Loyalty Points,App Notification,Existing,Books
+489,64,58100,563.92,0,0,2,BOGO,App Notification,Existing,Apparel
+490,20,54100,67.98,0,0,2,BOGO,SMS,Existing,Groceries
+491,69,38600,547.85,1,0,2,Discount,Email,Existing,Groceries
+492,67,18400,203.39,1,0,3,BOGO,App Notification,Existing,Apparel
+493,26,27200,2.01,1,1,6,Discount,SMS,New,Apparel
+494,66,47200,21.72,1,0,3,Loyalty Points,Email,New,Electronics
+495,36,18200,179.72,1,0,3,Discount,App Notification,Lapsed,Electronics
+496,53,42700,19.98,1,0,5,Loyalty Points,Email,Existing,Groceries
+497,57,38200,275.57,0,0,4,Coupon,SMS,Lapsed,Books
+498,44,60000,222.93,0,0,2,BOGO,Email,Lapsed,Electronics
+499,59,25200,41.49,0,0,3,Loyalty Points,SMS,Existing,Apparel
+500,45,16000,202.63,0,0,6,Coupon,App Notification,Lapsed,Electronics
+501,60,38700,167.27,1,0,6,Coupon,SMS,New,Electronics
+502,68,54500,56.56,0,0,6,Loyalty Points,SMS,New,Apparel
+503,25,61000,245.9,0,0,3,Discount,App Notification,Existing,Groceries
+504,59,31400,57.89,0,1,3,Loyalty Points,SMS,Existing,Electronics
+505,65,52100,400.09,1,1,6,BOGO,Email,Existing,Electronics
+506,25,28300,100.92,1,0,5,Coupon,App Notification,Existing,Groceries
+507,35,33800,136.75,1,0,6,Discount,Email,New,Electronics
+508,38,53500,216.54,1,0,4,Loyalty Points,App Notification,Existing,Books
+509,63,55800,429.06,1,0,3,Loyalty Points,SMS,Existing,Groceries
+510,30,30000,121.82,1,0,2,Coupon,Email,New,Books
+511,44,52100,212.78,1,0,3,Loyalty Points,App Notification,Existing,Apparel
+512,64,17000,181.69,0,0,6,BOGO,Email,Existing,Books
+513,57,42000,14.98,1,0,3,Discount,App Notification,Existing,Apparel
+514,33,28000,200.42,0,0,2,BOGO,App Notification,Lapsed,Groceries
+515,57,32900,9.5,1,1,5,Coupon,Email,Existing,Apparel
+516,26,25900,140.89,1,1,7,Discount,Email,Existing,Apparel
+517,44,53300,22.53,1,0,7,Coupon,Email,New,Apparel
+518,34,53300,187.64,0,0,5,Coupon,Email,Existing,Apparel
+519,20,34600,255.3,0,1,5,BOGO,App Notification,Existing,Books
+520,21,50600,308.15,1,0,4,Discount,Email,Existing,Apparel
+521,57,48900,178.33,0,0,3,Coupon,Email,Existing,Apparel
+522,69,43100,907.46,0,0,2,BOGO,Email,Existing,Electronics
+523,18,77400,89.23,1,0,3,BOGO,Email,Existing,Electronics
+524,31,32400,2.28,1,0,3,Discount,Email,New,Electronics
+525,25,45200,341.21,1,0,3,Loyalty Points,Email,Existing,Apparel
+526,24,39300,120.42,1,1,6,Loyalty Points,SMS,Existing,Electronics
+527,47,39400,156.43,0,0,3,Coupon,SMS,Existing,Books
+528,42,47400,375.47,1,0,5,Loyalty Points,App Notification,New,Groceries
+529,56,40600,60.76,1,0,6,Discount,Email,Lapsed,Groceries
+530,33,32100,79.13,0,0,2,Loyalty Points,Email,Lapsed,Groceries
+531,28,46900,20.34,0,0,3,Discount,App Notification,Existing,Electronics
+532,42,62700,229.01,1,0,6,Coupon,Email,New,Apparel
+533,50,59100,47.9,1,0,2,Loyalty Points,Email,Existing,Groceries
+534,69,48000,383.79,1,0,7,Discount,Email,Existing,Books
+535,68,34000,188.46,0,0,2,Discount,SMS,Existing,Electronics
+536,65,47800,484.65,1,0,3,Discount,Email,New,Electronics
+537,38,61300,12.59,0,0,9,BOGO,SMS,Existing,Books
+538,69,62900,958.5,1,1,7,Coupon,Email,Existing,Apparel
+539,69,50400,101.43,1,0,2,Discount,Email,Lapsed,Apparel
+540,27,39500,157.78,0,1,2,BOGO,App Notification,Existing,Books
+541,67,42000,206.42,0,0,6,BOGO,App Notification,Lapsed,Books
+542,26,56600,132.83,0,0,5,Discount,Email,Lapsed,Electronics
+543,18,55300,150.11,0,0,5,Coupon,Email,Existing,Books
+544,51,18600,107.97,1,0,2,Loyalty Points,Email,Existing,Apparel
+545,48,54900,41.38,0,0,2,BOGO,SMS,Existing,Apparel
+546,38,55700,697.63,1,0,5,Discount,Email,Existing,Apparel
+547,41,31700,322.99,1,1,5,Coupon,App Notification,New,Apparel
+548,36,33500,182.21,1,0,1,Coupon,SMS,New,Apparel
+549,65,33600,11.65,0,0,3,Discount,Email,Lapsed,Electronics
+550,38,34800,450.23,1,0,1,BOGO,SMS,Lapsed,Books
+551,42,23700,16.11,1,0,4,Loyalty Points,SMS,Existing,Books
+552,37,49700,304.82,0,0,3,Coupon,SMS,Existing,Groceries
+553,43,33200,12.13,0,0,3,Loyalty Points,SMS,Existing,Electronics
+554,24,43900,286.48,0,1,3,Coupon,Email,Existing,Electronics
+555,20,37500,372.32,1,0,6,Coupon,App Notification,New,Electronics
+556,57,48800,119.48,1,0,7,Coupon,SMS,Existing,Electronics
+557,65,29800,161.75,0,0,3,BOGO,App Notification,Existing,Electronics
+558,25,48700,363.52,1,0,6,BOGO,SMS,New,Apparel
+559,47,50800,705.95,0,0,6,Discount,App Notification,Existing,Groceries
+560,28,57400,3.59,0,0,7,Loyalty Points,SMS,Lapsed,Apparel
+561,25,74500,27.8,1,0,4,Loyalty Points,SMS,Lapsed,Groceries
+562,54,13600,399.23,1,0,2,Discount,Email,Existing,Electronics
+563,34,49800,226.98,1,0,4,BOGO,Email,New,Electronics
+564,25,34400,63.59,1,0,1,Loyalty Points,SMS,Existing,Books
+565,64,16100,117.8,1,0,5,Discount,App Notification,Lapsed,Electronics
+566,61,57600,23.57,0,1,4,Coupon,Email,Existing,Electronics
+567,47,65000,5.82,1,0,6,Loyalty Points,Email,Lapsed,Electronics
+568,60,39100,263.34,0,0,2,BOGO,Email,New,Electronics
+569,60,48200,257.52,1,0,2,Loyalty Points,Email,Existing,Electronics
+570,33,44000,237.02,0,0,4,Coupon,SMS,New,Groceries
+571,21,51500,431.61,0,0,3,BOGO,App Notification,Existing,Books
+572,38,58200,67.55,0,0,3,BOGO,Email,New,Electronics
+573,67,50200,110.2,0,0,2,Discount,Email,Existing,Electronics
+574,51,50200,57.69,0,0,5,BOGO,App Notification,Existing,Electronics
+575,57,63900,196.33,1,0,3,Discount,Email,Existing,Groceries
+576,52,42500,202.68,0,0,6,BOGO,App Notification,Lapsed,Groceries
+577,30,58800,104.77,1,0,6,Coupon,SMS,Existing,Books
+578,60,32700,547.08,1,1,3,Coupon,Email,Lapsed,Electronics
+579,44,69100,134.1,0,0,4,Coupon,App Notification,New,Books
+580,25,56100,499.35,1,1,5,Coupon,Email,Existing,Apparel
+581,58,38900,262.21,0,1,5,Coupon,SMS,Lapsed,Groceries
+582,59,13300,558.24,0,0,4,Loyalty Points,App Notification,Existing,Electronics
+583,46,45000,283.52,1,1,5,Coupon,App Notification,Lapsed,Groceries
+584,33,27300,50.9,0,0,5,BOGO,App Notification,Existing,Books
+585,60,49500,234.02,0,0,10,Discount,Email,Existing,Apparel
+586,63,66800,54.48,1,1,6,Loyalty Points,App Notification,Existing,Electronics
+587,22,47400,68.67,0,0,3,BOGO,App Notification,Lapsed,Groceries
+588,54,42300,50.06,0,0,3,Coupon,App Notification,Lapsed,Apparel
+589,57,50100,137.18,1,0,2,Coupon,SMS,Existing,Books
+590,57,49300,113.84,0,0,4,BOGO,App Notification,Existing,Books
+591,59,9600,475.32,1,1,3,Loyalty Points,App Notification,Existing,Groceries
+592,27,48600,179.85,0,0,6,Discount,App Notification,Existing,Groceries
+593,32,54300,89.19,1,0,6,Discount,SMS,Existing,Electronics
+594,38,41100,195.29,1,0,2,Discount,App Notification,Existing,Books
+595,51,59700,83.57,0,0,5,Discount,Email,Lapsed,Electronics
+596,39,43100,361.96,0,0,3,Coupon,App Notification,Existing,Groceries
+597,39,56500,18.66,1,0,5,Loyalty Points,Email,Existing,Apparel
+598,26,79100,49.36,0,0,3,Coupon,SMS,New,Electronics
+599,43,43600,19.75,0,0,7,Loyalty Points,SMS,Existing,Books
+600,30,15900,403.72,1,0,3,Discount,App Notification,Existing,Groceries
+601,35,40000,63.51,1,1,5,BOGO,App Notification,Existing,Groceries
+602,18,19100,1049.12,0,0,6,BOGO,SMS,Existing,Electronics
+603,40,54200,32.95,1,1,6,Coupon,SMS,New,Electronics
+604,50,64600,78.36,1,1,2,BOGO,SMS,Existing,Groceries
+605,64,55400,447.6,1,0,3,Coupon,Email,Lapsed,Electronics
+606,48,49800,201.79,0,0,1,Coupon,Email,Existing,Groceries
+607,38,35300,136.56,0,0,9,Loyalty Points,App Notification,Lapsed,Books
+608,40,68600,35.78,0,0,7,Discount,Email,Existing,Apparel
+609,33,56300,313.01,1,0,2,Discount,SMS,Existing,Electronics
+610,44,49300,81,0,0,5,Discount,App Notification,Existing,Books
+611,54,48100,279.76,0,0,2,Discount,Email,Existing,Books
+612,55,46700,174.84,0,0,3,Loyalty Points,App Notification,Existing,Electronics
+613,69,51800,191.77,1,0,6,Discount,Email,Existing,Books
+614,31,35800,78.69,0,0,4,Discount,App Notification,Existing,Groceries
+615,54,67900,15.6,1,0,2,BOGO,SMS,Existing,Electronics
+616,64,47300,180.93,0,0,5,Discount,SMS,Lapsed,Apparel
+617,24,54000,272.12,1,0,4,Discount,SMS,Existing,Groceries
+618,29,38500,171.63,0,0,3,Coupon,Email,Lapsed,Books
+619,45,50600,183.84,0,0,4,Coupon,App Notification,Existing,Books
+620,20,10800,239.08,1,0,4,Discount,App Notification,New,Apparel
+621,39,28200,9.17,0,0,2,Coupon,App Notification,Existing,Apparel
+622,68,44500,50.64,0,1,2,BOGO,Email,New,Books
+623,38,25200,190.31,1,0,5,BOGO,SMS,Existing,Apparel
+624,46,81600,29.15,1,0,6,BOGO,SMS,New,Apparel
+625,37,20000,63.02,0,0,7,Loyalty Points,App Notification,New,Books
+626,20,50200,9.21,0,0,2,BOGO,App Notification,New,Groceries
+627,44,69800,48.49,1,1,4,Discount,Email,New,Electronics
+628,38,52200,2.33,1,0,4,BOGO,App Notification,Existing,Books
+629,58,40300,341.09,0,0,2,BOGO,App Notification,Lapsed,Apparel
+630,50,36700,177.23,0,0,5,BOGO,Email,Lapsed,Apparel
+631,47,55100,158.24,0,0,2,BOGO,App Notification,Lapsed,Groceries
+632,65,33000,1.13,0,0,4,Coupon,SMS,New,Books
+633,56,43200,379.59,1,0,4,BOGO,Email,New,Books
+634,58,55400,0.01,1,0,8,BOGO,SMS,New,Apparel
+635,26,40400,309.59,0,0,6,Coupon,App Notification,Existing,Books
+636,65,46300,49.42,0,0,3,Coupon,App Notification,Lapsed,Apparel
+637,55,40400,343.18,0,0,8,Loyalty Points,Email,Lapsed,Apparel
+638,40,30500,27.65,0,0,6,Discount,Email,Existing,Apparel
+639,40,62800,158.52,1,0,6,Loyalty Points,Email,Existing,Electronics
+640,18,65900,5.98,1,0,2,Coupon,Email,Lapsed,Apparel
+641,38,40200,161.78,1,1,6,Coupon,App Notification,Existing,Groceries
+642,49,41000,28.54,0,0,4,Coupon,App Notification,New,Books
+643,62,42300,328.09,1,0,5,Loyalty Points,SMS,New,Electronics
+644,43,53100,53.9,1,0,3,BOGO,SMS,Existing,Books
+645,50,31400,24.65,1,1,2,Discount,Email,New,Groceries
+646,26,43700,6.18,0,0,7,Discount,App Notification,Lapsed,Electronics
+647,34,48900,170.73,0,0,3,BOGO,Email,Existing,Books
+648,23,54600,216.92,1,0,4,Discount,Email,New,Electronics
+649,63,3300,450.44,1,0,4,BOGO,Email,New,Apparel
+650,24,51100,12.75,0,0,2,Loyalty Points,Email,New,Apparel
+651,24,50200,99.49,0,0,2,Coupon,Email,Existing,Books
+652,54,60100,35.61,0,0,4,BOGO,App Notification,New,Groceries
+653,22,37100,139.51,1,0,3,BOGO,SMS,Existing,Electronics
+654,50,37200,54.47,0,0,4,Coupon,Email,Existing,Electronics
+655,67,63000,105.88,1,0,3,Coupon,App Notification,New,Books
+656,27,21600,91.97,1,0,6,Discount,Email,Existing,Apparel
+657,34,69400,234.24,0,1,4,BOGO,App Notification,New,Electronics
+658,57,83300,270.89,1,0,3,Coupon,SMS,New,Apparel
+659,45,52200,110.56,1,0,3,Discount,SMS,Existing,Apparel
+660,64,57200,55.94,1,1,7,Loyalty Points,App Notification,New,Groceries
+661,63,22700,316.61,1,1,6,BOGO,Email,Existing,Apparel
+662,39,34600,376.71,1,0,5,Loyalty Points,SMS,Existing,Apparel
+663,38,60900,155.31,1,0,6,Coupon,Email,Existing,Electronics
+664,64,50400,57.42,1,0,5,Coupon,Email,Lapsed,Groceries
+665,49,42300,306.4,1,0,6,BOGO,App Notification,Existing,Groceries
+666,49,48500,88.02,0,1,4,Loyalty Points,Email,Existing,Books
+667,68,52600,501.91,0,0,3,Coupon,App Notification,Lapsed,Books
+668,53,40600,62.05,0,0,2,BOGO,App Notification,Lapsed,Books
+669,48,44600,563.55,1,0,4,BOGO,App Notification,Existing,Groceries
+670,23,44500,111.69,0,0,5,BOGO,SMS,New,Apparel
+671,38,29200,279.9,1,0,4,Coupon,Email,New,Groceries
+672,52,49900,46.86,0,0,5,Coupon,App Notification,Existing,Apparel
+673,31,72100,196.06,0,0,4,BOGO,App Notification,Lapsed,Books
+674,40,71000,174.55,1,0,3,Discount,Email,Existing,Books
+675,59,22900,109.05,0,0,4,BOGO,SMS,Existing,Apparel
+676,41,53600,265.93,1,0,4,BOGO,App Notification,Existing,Apparel
+677,47,55100,340.73,1,0,3,BOGO,App Notification,Existing,Books
+678,27,38800,259.86,0,0,5,Discount,App Notification,New,Apparel
+679,22,30500,335.43,0,0,4,Loyalty Points,App Notification,Lapsed,Groceries
+680,59,25200,273.44,0,0,2,Coupon,Email,Existing,Books
+681,47,38300,32.42,0,0,1,Coupon,App Notification,Existing,Groceries
+682,24,50300,296.04,0,0,4,Loyalty Points,SMS,Existing,Books
+683,23,42600,42.31,0,1,5,BOGO,Email,Existing,Electronics
+684,25,35800,20.9,1,1,5,BOGO,SMS,New,Groceries
+685,69,26300,463.84,0,1,2,Coupon,Email,Existing,Electronics
+686,43,50300,182.38,0,0,5,BOGO,Email,Existing,Books
+687,35,61000,38.84,1,0,2,Loyalty Points,Email,Existing,Groceries
+688,53,31100,202.24,1,0,8,Coupon,SMS,Existing,Groceries
+689,43,51700,80.95,1,0,1,Discount,SMS,New,Groceries
+690,53,16800,30.52,1,0,4,BOGO,App Notification,Existing,Apparel
+691,58,35100,321.37,1,0,7,Loyalty Points,SMS,Lapsed,Groceries
+692,21,55900,23.3,1,0,5,Coupon,App Notification,New,Groceries
+693,30,28200,656.43,0,0,8,Coupon,Email,Existing,Electronics
+694,41,35900,295.62,1,0,5,Discount,App Notification,Existing,Groceries
+695,48,66300,249.12,1,1,4,BOGO,SMS,Lapsed,Apparel
+696,39,34000,54.66,0,0,1,Discount,Email,Existing,Groceries
+697,57,32200,285.08,0,0,4,Loyalty Points,Email,Existing,Electronics
+698,35,53600,4.56,0,0,2,Coupon,App Notification,New,Groceries
+699,51,74300,161.43,1,0,6,Coupon,App Notification,Lapsed,Groceries
+700,40,41400,74.43,1,1,3,Discount,SMS,Lapsed,Electronics
+701,56,56500,357.1,1,0,4,Discount,Email,Existing,Books
+702,64,65200,286.53,0,0,6,Discount,App Notification,Lapsed,Groceries
+703,54,49900,133.82,1,0,5,BOGO,Email,New,Books
+704,64,41000,127.87,0,0,3,Coupon,SMS,Existing,Electronics
+705,18,31900,15.19,1,0,3,BOGO,Email,Existing,Electronics
+706,59,23600,53.49,1,1,3,Loyalty Points,App Notification,New,Books
+707,37,61700,245.69,1,0,3,BOGO,SMS,Lapsed,Apparel
+708,64,47700,13.58,1,0,3,Discount,SMS,Existing,Apparel
+709,42,65000,309.53,0,0,4,Loyalty Points,Email,Existing,Electronics
+710,23,59800,778.02,0,0,3,Loyalty Points,App Notification,Existing,Apparel
+711,69,35700,16.48,1,0,3,BOGO,Email,Existing,Apparel
+712,47,27200,122.46,0,0,5,BOGO,Email,New,Electronics
+713,37,51200,173.04,1,0,3,Discount,Email,New,Groceries
+714,26,35500,335.23,0,0,3,Discount,App Notification,Existing,Groceries
+715,65,50700,32.52,1,0,1,Loyalty Points,Email,New,Groceries
+716,66,34000,89.3,0,0,3,Discount,Email,Lapsed,Apparel
+717,35,32100,361.08,1,1,8,Coupon,SMS,Existing,Books
+718,57,42900,146.04,0,0,3,Coupon,SMS,Existing,Apparel
+719,20,59000,35.7,1,0,2,Loyalty Points,SMS,Lapsed,Groceries
+720,53,49600,407.15,1,0,4,BOGO,App Notification,Existing,Electronics
+721,23,62700,550.16,0,0,3,BOGO,Email,Existing,Electronics
+722,61,26500,269.16,0,0,7,Coupon,Email,Existing,Electronics
+723,55,29100,727.36,0,0,2,BOGO,SMS,Existing,Apparel
+724,18,43700,522.17,0,0,3,Discount,Email,Existing,Books
+725,36,77500,25.89,0,0,4,Coupon,App Notification,Lapsed,Groceries
+726,55,55100,105.27,1,0,4,Loyalty Points,Email,Lapsed,Electronics
+727,45,29000,181.71,0,0,3,BOGO,SMS,Existing,Groceries
+728,64,43900,263.64,0,0,4,Loyalty Points,App Notification,Existing,Groceries
+729,26,48300,153.17,1,0,5,Loyalty Points,Email,Lapsed,Apparel
+730,64,36500,209.51,0,0,4,BOGO,Email,Existing,Electronics
+731,27,54200,24.84,1,0,2,BOGO,Email,Lapsed,Apparel
+732,41,42700,104.27,1,0,5,Coupon,App Notification,Existing,Groceries
+733,43,40500,1.38,0,0,5,Coupon,Email,Lapsed,Groceries
+734,25,63900,211.02,0,0,5,Loyalty Points,SMS,Lapsed,Groceries
+735,22,19400,35.94,0,0,3,Loyalty Points,SMS,Lapsed,Electronics
+736,30,30600,103.49,0,0,7,Coupon,SMS,Existing,Electronics
+737,39,32700,138.09,0,0,4,Loyalty Points,SMS,Existing,Electronics
+738,51,32300,219.55,1,0,1,Discount,App Notification,Existing,Groceries
+739,42,34100,288.14,1,1,5,BOGO,SMS,New,Groceries
+740,40,52300,251.12,1,0,3,BOGO,SMS,Existing,Books
+741,58,61400,167.78,0,0,2,Discount,SMS,Lapsed,Electronics
+742,65,58700,150.48,0,0,1,Coupon,App Notification,Existing,Groceries
+743,38,29700,388.84,0,0,3,Coupon,App Notification,Existing,Groceries
+744,20,43400,403.15,1,0,4,Loyalty Points,Email,Existing,Books
+745,25,51800,12.78,0,0,2,Loyalty Points,SMS,Existing,Books
+746,63,48600,62.98,0,0,2,Coupon,Email,Existing,Groceries
+747,67,64600,509.33,0,0,5,Loyalty Points,App Notification,Lapsed,Electronics
+748,56,34900,179.62,1,0,3,Discount,Email,Existing,Apparel
+749,68,47300,28.93,0,0,1,BOGO,App Notification,New,Apparel
+750,56,39100,14.76,1,0,4,Discount,Email,Existing,Apparel
+751,39,48800,19.84,0,1,5,BOGO,SMS,Existing,Electronics
+752,62,28800,293.8,1,1,2,BOGO,App Notification,New,Groceries
+753,28,31100,50.2,0,0,3,Loyalty Points,App Notification,Existing,Apparel
+754,40,34000,55.67,1,1,5,Loyalty Points,App Notification,Existing,Apparel
+755,66,36500,27.99,1,1,1,BOGO,SMS,Existing,Electronics
+756,33,68200,183.09,1,1,6,Loyalty Points,SMS,Existing,Groceries
+757,69,62600,144.26,1,0,5,Discount,App Notification,New,Groceries
+758,68,41800,66.13,1,0,2,Coupon,App Notification,Lapsed,Electronics
+759,45,47600,214.66,1,0,4,Loyalty Points,SMS,New,Apparel
+760,52,21100,300.82,1,0,4,Loyalty Points,SMS,Existing,Groceries
+761,59,42300,778.39,0,0,3,Loyalty Points,SMS,New,Groceries
+762,46,47400,130.29,1,1,2,Coupon,SMS,Existing,Apparel
+763,55,62200,106.54,0,0,3,Discount,SMS,Existing,Electronics
+764,23,49900,69.11,0,0,2,BOGO,SMS,Existing,Apparel
+765,66,51500,307.05,1,0,4,Discount,Email,Existing,Books
+766,31,49500,716.64,1,0,6,Loyalty Points,SMS,New,Groceries
+767,46,49000,183.47,0,0,5,Coupon,SMS,New,Electronics
+768,66,24000,205.62,1,0,7,Discount,App Notification,Lapsed,Apparel
+769,45,38700,233.68,0,0,3,Loyalty Points,App Notification,Existing,Apparel
+770,27,66500,110.08,0,0,3,Loyalty Points,Email,Existing,Electronics
+771,63,57400,49.78,0,0,2,BOGO,SMS,New,Groceries
+772,64,52400,59.18,0,0,3,Coupon,App Notification,Existing,Electronics
+773,21,46000,192.05,1,1,4,BOGO,App Notification,Existing,Books
+774,41,54900,203.03,1,0,5,Discount,Email,Lapsed,Electronics
+775,19,30800,123.95,0,0,4,BOGO,SMS,Existing,Books
+776,63,21300,8.86,0,0,6,Discount,App Notification,New,Groceries
+777,46,39300,419.5,0,0,3,Loyalty Points,SMS,Existing,Apparel
+778,42,53100,56.03,0,0,4,Coupon,Email,Lapsed,Books
+779,48,46600,173.99,0,0,1,Coupon,Email,Existing,Books
+780,64,60200,268.39,0,0,4,Loyalty Points,SMS,Lapsed,Electronics
+781,68,50300,40.75,1,0,3,Coupon,Email,Existing,Electronics
+782,63,45700,128.22,0,0,3,BOGO,App Notification,New,Apparel
+783,32,64900,0.27,0,0,5,Discount,Email,New,Groceries
+784,55,62000,9.72,1,0,5,Discount,Email,New,Books
+785,50,43500,57.67,1,1,3,Discount,SMS,Existing,Apparel
+786,67,28500,215.01,0,0,4,BOGO,App Notification,Existing,Books
+787,66,31400,435.5,1,0,7,Discount,SMS,Existing,Apparel
+788,25,42600,110.5,0,0,1,Coupon,SMS,Existing,Electronics
+789,57,39500,5.07,1,1,3,Discount,SMS,Lapsed,Electronics
+790,33,69900,69.27,0,0,1,BOGO,Email,Existing,Groceries
+791,55,19800,629.32,1,1,5,Coupon,Email,Existing,Electronics
+792,61,44000,23.58,1,0,2,Loyalty Points,SMS,New,Apparel
+793,58,29000,281.88,0,0,2,Coupon,Email,Existing,Books
+794,51,46800,275.13,0,0,5,BOGO,Email,Lapsed,Apparel
+795,23,50700,178.28,1,0,2,Coupon,SMS,New,Groceries
+796,56,38900,534.41,1,0,3,Discount,App Notification,Existing,Electronics
+797,57,53000,205.53,1,0,2,BOGO,App Notification,Existing,Electronics
+798,66,42000,679.28,0,0,7,Loyalty Points,Email,Existing,Books
+799,40,42300,349.89,1,0,9,Discount,App Notification,New,Groceries
+800,67,38700,316.02,0,0,5,BOGO,App Notification,New,Groceries
+801,38,54800,603.4,0,0,3,BOGO,Email,New,Electronics
+802,52,47100,191.97,1,0,2,Loyalty Points,App Notification,Lapsed,Groceries
+803,64,68600,77.82,0,0,4,Loyalty Points,Email,Existing,Apparel
+804,46,64100,21.89,0,0,3,BOGO,SMS,Lapsed,Groceries
+805,52,53300,237.01,1,0,4,Loyalty Points,App Notification,New,Apparel
+806,19,12600,148.16,0,0,6,Loyalty Points,SMS,Existing,Apparel
+807,50,22700,97.37,0,0,3,Discount,SMS,Existing,Apparel
+808,43,59800,598.13,0,1,3,BOGO,Email,Existing,Electronics
+809,61,37900,487.06,1,0,8,Coupon,App Notification,Existing,Apparel
+810,49,48500,94.95,1,0,6,Discount,App Notification,Existing,Books
+811,35,35500,581.87,1,0,6,BOGO,App Notification,Existing,Groceries
+812,51,52800,113.13,0,0,4,BOGO,App Notification,Existing,Apparel
+813,47,59400,46.17,1,1,3,Discount,Email,Existing,Books
+814,61,26900,193.86,0,0,4,Loyalty Points,SMS,Lapsed,Electronics
+815,40,32800,19.8,0,0,5,Coupon,App Notification,Lapsed,Electronics
+816,65,20000,33.13,1,0,5,Coupon,App Notification,Existing,Electronics
+817,37,48500,336.7,1,0,2,BOGO,Email,Existing,Electronics
+818,63,20000,341.97,0,0,3,BOGO,App Notification,Existing,Groceries
+819,40,39500,55.05,0,0,6,Coupon,App Notification,New,Electronics
+820,57,52800,274.76,1,0,2,BOGO,SMS,New,Groceries
+821,25,75900,726.65,0,0,5,Coupon,App Notification,Existing,Books
+822,31,50500,633.26,1,1,5,Loyalty Points,App Notification,Existing,Electronics
+823,40,63800,117.59,1,0,4,Coupon,SMS,Lapsed,Electronics
+824,63,48900,398.88,0,0,6,Coupon,App Notification,Lapsed,Books
+825,31,49600,162.88,1,0,4,Coupon,SMS,Lapsed,Books
+826,19,41800,166.38,1,0,7,BOGO,Email,Lapsed,Groceries
+827,21,39300,54.7,0,0,3,Loyalty Points,SMS,Existing,Apparel
+828,41,62600,96.97,1,0,5,Discount,SMS,Existing,Groceries
+829,68,50600,48.38,0,0,5,Discount,App Notification,Existing,Apparel
+830,53,50000,271.31,1,0,5,Coupon,App Notification,Existing,Groceries
+831,26,35900,204.66,0,0,4,BOGO,App Notification,Existing,Apparel
+832,33,39800,326.41,1,0,1,Discount,App Notification,Existing,Electronics
+833,49,76000,193.45,1,0,1,Discount,SMS,Lapsed,Apparel
+834,49,44000,64.92,0,0,4,Coupon,Email,New,Books
+835,44,64900,609.52,1,0,2,Coupon,App Notification,New,Books
+836,32,37200,210.37,1,1,7,BOGO,SMS,Existing,Apparel
+837,66,57000,129.38,0,0,5,Discount,Email,Lapsed,Electronics
+838,21,49300,300.63,0,0,7,Coupon,Email,New,Electronics
+839,53,38900,58.77,1,0,2,Loyalty Points,Email,Lapsed,Apparel
+840,42,54700,333.02,1,0,6,Loyalty Points,SMS,Lapsed,Apparel
+841,32,21800,82.59,1,0,5,Loyalty Points,App Notification,Existing,Books
+842,29,53600,15.52,0,1,5,Coupon,SMS,Lapsed,Books
+843,24,56800,305.46,0,1,3,BOGO,App Notification,New,Groceries
+844,53,49100,42.38,0,0,3,Loyalty Points,Email,Existing,Electronics
+845,41,64700,206.73,0,0,5,Loyalty Points,Email,Existing,Electronics
+846,23,44000,62.88,0,0,4,Loyalty Points,SMS,Lapsed,Electronics
+847,65,42800,231.32,0,0,7,Coupon,Email,Existing,Groceries
+848,58,50300,26.96,1,0,3,Coupon,SMS,Existing,Groceries
+849,62,58000,195.58,0,0,6,Coupon,App Notification,Existing,Books
+850,48,53500,42.64,1,0,3,Loyalty Points,Email,Existing,Books
+851,38,41600,139.98,1,0,2,Coupon,App Notification,Existing,Apparel
+852,28,30100,412.24,1,0,3,Coupon,Email,Lapsed,Groceries
+853,33,55000,129.03,0,0,6,BOGO,App Notification,Existing,Groceries
+854,31,33200,295.74,1,1,4,Coupon,Email,Existing,Groceries
+855,42,32700,31.67,1,0,10,Discount,App Notification,New,Electronics
+856,31,35200,214.09,0,0,2,Coupon,Email,Lapsed,Books
+857,55,45900,32.97,0,0,4,Coupon,SMS,New,Apparel
+858,35,33100,292.69,0,1,5,Discount,App Notification,New,Groceries
+859,31,28000,250.4,0,0,2,Discount,App Notification,Lapsed,Groceries
+860,41,35100,102.97,1,0,4,Coupon,SMS,Existing,Groceries
+861,68,42300,126.99,1,0,3,BOGO,SMS,Existing,Electronics
+862,25,51800,36.88,1,1,2,Loyalty Points,SMS,Lapsed,Apparel
+863,62,46000,201.86,1,1,4,Discount,Email,Existing,Apparel
+864,42,28800,487.65,0,0,5,BOGO,SMS,Existing,Groceries
+865,51,48400,164.39,0,0,3,Coupon,Email,New,Apparel
+866,62,49800,75.71,0,0,2,Coupon,Email,Existing,Electronics
+867,61,38200,105.34,0,0,3,Discount,SMS,Existing,Groceries
+868,45,33100,49.25,1,0,6,Discount,SMS,Existing,Books
+869,41,33100,116.59,1,0,3,BOGO,Email,Existing,Books
+870,35,37000,136.69,1,0,3,Coupon,App Notification,Existing,Apparel
+871,51,78200,565.18,1,0,1,Discount,App Notification,Existing,Books
+872,59,31700,112.39,1,0,2,Discount,SMS,Existing,Books
+873,20,49000,396.47,0,0,2,Loyalty Points,App Notification,New,Groceries
+874,29,34300,36.5,1,0,1,Discount,Email,Existing,Electronics
+875,53,37400,157.57,0,0,5,BOGO,App Notification,Existing,Groceries
+876,22,34400,178.7,1,1,2,Coupon,Email,Existing,Electronics
+877,36,57000,180.14,1,0,7,Discount,SMS,Lapsed,Groceries
+878,29,50700,139.49,1,0,2,Loyalty Points,SMS,Existing,Books
+879,44,43100,291.47,0,0,3,Discount,App Notification,New,Groceries
+880,34,52500,37.96,0,0,4,Discount,SMS,Lapsed,Apparel
+881,60,56200,14.11,1,0,5,Coupon,SMS,Existing,Apparel
+882,45,32200,30.8,0,0,1,Loyalty Points,Email,Existing,Electronics
+883,57,53200,165.67,0,0,6,BOGO,Email,New,Electronics
+884,39,34200,57.46,1,0,7,BOGO,Email,Existing,Electronics
+885,27,57600,268.29,1,0,2,Coupon,Email,Existing,Apparel
+886,58,56100,12.98,0,0,3,BOGO,SMS,New,Groceries
+887,23,51100,479.37,1,0,2,BOGO,Email,Existing,Books
+888,34,41900,606.11,1,0,5,Discount,Email,Existing,Electronics
+889,29,37100,308.03,1,0,5,BOGO,Email,New,Groceries
+890,23,41000,420.67,0,1,5,Loyalty Points,App Notification,Lapsed,Groceries
+891,60,56500,95.07,1,0,5,Discount,Email,New,Apparel
+892,39,34800,34.77,1,0,8,BOGO,SMS,Existing,Apparel
+893,67,45700,44.62,0,1,5,Loyalty Points,SMS,Lapsed,Books
+894,33,18800,139.14,1,0,4,Discount,Email,New,Groceries
+895,21,48900,216.58,0,0,9,Loyalty Points,App Notification,Lapsed,Electronics
+896,42,29500,168.23,1,0,6,Coupon,App Notification,Existing,Apparel
+897,50,25200,22.17,0,0,5,Coupon,App Notification,Existing,Groceries
+898,18,52800,259.83,1,0,7,BOGO,App Notification,Existing,Apparel
+899,32,48200,311.18,1,0,4,Loyalty Points,Email,New,Groceries
+900,34,38300,5.99,0,0,4,Discount,Email,Existing,Apparel
+901,60,40500,122.83,1,0,2,Loyalty Points,SMS,Lapsed,Electronics
+902,36,79100,115.18,1,0,4,Loyalty Points,SMS,New,Books
+903,67,42100,13.92,0,0,4,Coupon,App Notification,Existing,Electronics
+904,36,42000,38.9,1,0,5,Coupon,App Notification,Existing,Apparel
+905,37,54800,337.47,1,0,2,BOGO,SMS,Existing,Apparel
+906,18,46300,175.72,1,0,5,Loyalty Points,SMS,Existing,Apparel
+907,40,59800,49.41,0,0,3,Loyalty Points,App Notification,Existing,Electronics
+908,33,49200,122.65,1,0,3,Discount,SMS,New,Apparel
+909,41,56400,385.68,0,0,6,Discount,App Notification,Existing,Electronics
+910,37,51600,21.58,0,0,2,Coupon,Email,Existing,Apparel
+911,32,54700,622.37,1,0,2,Loyalty Points,App Notification,Existing,Books
+912,41,44400,30.5,1,1,1,BOGO,Email,Lapsed,Books
+913,54,48300,68.71,0,0,3,Coupon,Email,New,Apparel
+914,58,40900,40.05,1,0,6,Loyalty Points,Email,Existing,Groceries
+915,50,54100,126.81,0,1,3,Coupon,SMS,Existing,Electronics
+916,49,24800,74.38,0,0,3,BOGO,SMS,Existing,Apparel
+917,48,55900,893.22,1,0,2,Loyalty Points,App Notification,New,Electronics
+918,32,60000,3.1,1,0,3,BOGO,Email,Lapsed,Groceries
+919,18,56100,77.58,0,0,3,Loyalty Points,App Notification,Lapsed,Books
+920,66,43400,180.62,0,0,5,Loyalty Points,Email,Existing,Electronics
+921,29,52600,83.11,0,0,4,BOGO,Email,Existing,Electronics
+922,52,33400,121.68,0,0,2,Discount,App Notification,Lapsed,Electronics
+923,54,57600,110.75,1,1,2,BOGO,App Notification,Lapsed,Electronics
+924,65,28500,18.04,0,1,3,BOGO,App Notification,Existing,Electronics
+925,47,53900,209.42,1,0,7,Coupon,App Notification,Existing,Books
+926,43,53000,359.17,1,0,6,BOGO,SMS,Existing,Electronics
+927,28,51100,150.08,1,0,2,BOGO,Email,New,Electronics
+928,49,38300,32.41,1,0,2,Coupon,Email,Existing,Books
+929,19,56400,131.28,1,0,5,Discount,SMS,Existing,Apparel
+930,27,17400,2.85,1,0,3,BOGO,Email,Lapsed,Apparel
+931,63,56700,476.07,0,0,2,Coupon,SMS,Existing,Electronics
+932,39,47900,55.04,1,0,3,Discount,Email,New,Books
+933,26,60800,465.29,1,0,5,Discount,SMS,Existing,Electronics
+934,47,48000,175.47,0,0,1,BOGO,SMS,New,Apparel
+935,42,72600,818.87,1,1,5,Discount,Email,Existing,Books
+936,38,30900,378.52,0,0,2,BOGO,Email,Existing,Groceries
+937,35,54100,2.23,0,0,4,Discount,Email,New,Books
+938,37,31700,3.05,1,1,7,Discount,App Notification,Existing,Apparel
+939,68,43100,272.08,0,0,7,Discount,Email,Existing,Books
+940,57,56100,145.46,0,0,4,BOGO,Email,Existing,Groceries
+941,33,54400,281.6,0,0,5,Discount,Email,Existing,Books
+942,66,76200,178.17,0,0,5,Loyalty Points,App Notification,Lapsed,Electronics
+943,56,39700,52.87,1,0,5,Coupon,Email,Existing,Electronics
+944,52,64300,308.92,0,0,3,Coupon,SMS,Existing,Apparel
+945,46,41200,6.31,1,0,8,Loyalty Points,SMS,Lapsed,Books
+946,63,34500,328.51,1,0,3,Discount,App Notification,Existing,Apparel
+947,47,20700,218.78,0,1,5,Loyalty Points,App Notification,Existing,Books
+948,69,47400,223.73,0,0,3,BOGO,App Notification,Lapsed,Apparel
+949,65,37200,8.97,0,0,6,Coupon,App Notification,Lapsed,Books
+950,20,57700,47.09,0,0,3,Discount,App Notification,New,Electronics
+951,49,37100,134.25,0,0,5,Coupon,Email,Lapsed,Apparel
+952,31,37900,116.7,0,0,4,Loyalty Points,SMS,New,Apparel
+953,43,50300,5.36,1,0,3,Loyalty Points,SMS,Lapsed,Groceries
+954,22,70800,81.84,0,0,5,Coupon,Email,Existing,Books
+955,45,28700,685.07,0,0,4,Coupon,App Notification,New,Electronics
+956,25,60300,73.22,0,0,1,Coupon,Email,Existing,Electronics
+957,62,58100,200.36,0,0,4,Coupon,App Notification,Lapsed,Electronics
+958,65,41700,228.95,1,1,5,Loyalty Points,SMS,Existing,Apparel
+959,50,55100,195.45,1,0,5,Discount,SMS,Lapsed,Electronics
+960,53,40700,68.41,0,0,3,Coupon,App Notification,Existing,Apparel
+961,30,80600,169.58,1,0,5,Discount,Email,Existing,Groceries
+962,37,43300,243.54,1,0,7,Coupon,App Notification,New,Electronics
+963,35,46200,96.68,0,0,5,BOGO,App Notification,New,Groceries
+964,68,40100,65.79,1,0,3,Discount,SMS,Existing,Books
+965,67,19600,64.32,1,1,6,BOGO,App Notification,Existing,Books
+966,37,41100,500.45,0,0,4,Loyalty Points,Email,Lapsed,Groceries
+967,60,48500,206.83,1,0,5,BOGO,App Notification,Existing,Books
+968,50,67500,279.22,1,0,4,Loyalty Points,SMS,Existing,Electronics
+969,38,52400,167.78,0,0,5,Coupon,Email,Lapsed,Electronics
+970,63,42200,199.1,0,0,2,Loyalty Points,Email,Existing,Apparel
+971,41,45900,64.74,1,0,6,Coupon,SMS,Existing,Groceries
+972,45,49900,446.68,0,0,9,Coupon,SMS,Existing,Groceries
+973,22,39300,139.11,1,0,3,Coupon,App Notification,Lapsed,Apparel
+974,47,55200,327.31,0,0,5,Loyalty Points,SMS,New,Electronics
+975,60,69400,145.97,1,0,5,Coupon,SMS,Existing,Groceries
+976,41,39600,24.73,0,0,5,BOGO,SMS,Existing,Apparel
+977,56,63100,23.72,1,0,5,BOGO,SMS,Lapsed,Groceries
+978,31,58100,124.77,0,0,4,Coupon,Email,Existing,Groceries
+979,53,53100,112.39,1,1,5,Coupon,Email,Existing,Apparel
+980,53,46700,489.05,1,0,4,Discount,Email,Existing,Groceries
+981,43,50100,28.25,0,1,3,Loyalty Points,SMS,Existing,Books
+982,30,41700,232.03,0,0,2,Discount,App Notification,Existing,Apparel
+983,57,72600,500.55,0,0,1,BOGO,App Notification,New,Apparel
+984,38,34200,105.89,0,0,3,Loyalty Points,App Notification,New,Books
+985,43,62000,432.53,1,0,5,BOGO,App Notification,Lapsed,Groceries
+986,51,68200,31.17,1,0,2,Loyalty Points,Email,Existing,Books
+987,57,40200,22.26,1,0,2,Loyalty Points,App Notification,Lapsed,Groceries
+988,31,62500,53.15,1,0,2,Loyalty Points,Email,Existing,Electronics
+989,38,47200,147.29,0,0,4,BOGO,App Notification,Existing,Books
+990,60,45900,207.93,0,0,2,Coupon,App Notification,Existing,Books
+991,66,43900,295.03,0,0,6,BOGO,Email,New,Books
+992,64,20800,290.96,0,0,2,Loyalty Points,Email,Existing,Electronics
+993,67,53200,23.73,0,0,3,BOGO,App Notification,Existing,Groceries
+994,36,66700,414.3,1,0,5,BOGO,SMS,Existing,Electronics
+995,29,34400,23.83,1,0,1,Discount,App Notification,Lapsed,Books
+996,53,57700,456.19,0,0,6,Loyalty Points,App Notification,Existing,Electronics
+997,47,43700,632.25,0,0,3,BOGO,App Notification,Lapsed,Books
+998,61,28600,175.46,0,0,3,Loyalty Points,Email,New,Apparel
+999,50,60000,236.77,1,1,7,BOGO,App Notification,Lapsed,Groceries
+1000,61,70300,92.32,0,0,5,Discount,SMS,Lapsed,Books
