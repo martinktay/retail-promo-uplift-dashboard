@@ -36,7 +36,6 @@ st.markdown("""
         padding: 1.5rem;
         border-radius: 0.5rem;
         border-left: 4px solid #1f77b4;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .metric-card h4 {
         color: #ffffff;
@@ -58,7 +57,6 @@ st.markdown("""
         border-radius: 0.5rem;
         border-left: 4px solid #ff7f0e;
         margin: 1rem 0;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .insight-box h4 {
         color: #ffffff;
